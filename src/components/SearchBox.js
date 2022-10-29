@@ -6,7 +6,7 @@ const SearchBox = () => {
   return (
     <div className="search">
         <input type="text" placeholder="Find Your Anime..." />
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
+        <FontAwesomeIcon className="icon" icon={faMagnifyingGlass} />
     </div>
   )
 }
