@@ -27,7 +27,7 @@ nav {
     align-items: center;
     width: 100%;
     border: 1px solid rgba(0,0,0,0.04);
-    background-color: rgba(28,29,47,.98);
+
 }
 
 .logo {
@@ -56,7 +56,7 @@ nav .menu li a {
 .search {
     width: 250px;
     height: 40px;
-    background-color: rgba(245, 245, 245, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,13 +72,41 @@ nav .menu li a {
     background: transparent;
 }
 
-.search .icon {
-    color:#3a3a3a;
+::-webkit-input-placeholder {
+    color: #fff;
 }
 
-nav .menu li a:hover {
-    background-color: #4791ff;
-    color: #ffffff;
-    box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
-    transition: all ease 0.2s;
+::-moz-placeholder {
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+}
+
+.search .icon {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+nav .menu li a{
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav .menu li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
