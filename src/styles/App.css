@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+.App {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../asset/img/background.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -62,4 +70,15 @@ nav .menu li a {
     border: none;
     outline: none;
     background: transparent;
+}
+
+.search .icon {
+    color:#3a3a3a;
+}
+
+nav .menu li a:hover {
+    background-color: #4791ff;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
+    transition: all ease 0.2s;
 }
