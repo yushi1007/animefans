@@ -1,3 +1,6 @@
+/* ----------------------------------------------- */
+/* WHOLE PAGE SIZE */
+/* ----------------------------------------------- */
 * {
     box-sizing: border-box;
 }
@@ -8,6 +11,40 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
 }
 
 /* ----------------------------------------------- */
@@ -23,7 +60,7 @@ a {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     border: 1px solid rgba(0,0,0,0.04);
@@ -43,8 +80,7 @@ nav .menu {
 nav .menu li a {
     height: 40px;
     line-height: 43px;
-    margin: 0;
-    padding: 0px 22px;
+    margin: 0px 22px;
     display: flex;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -91,6 +127,11 @@ nav .menu li a {
 nav .menu li a{
     display: inline-block;
     position: relative;
+    transition: 0.25s ease-out;
+}
+
+nav .menu li a:hover {
+    color: deepskyblue;
 }
 
 nav .menu li a::after {
@@ -109,4 +150,40 @@ nav .menu li a::after {
 nav .menu li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* ----------------------------------------------- */
+/* GENRES SECTION */
+/* ----------------------------------------------- */
+.genres-list {
+    color: hsla(0,0%,100%,.7);
+    border: 1px solid transparent;
+    margin: 20px 0 10px;
+    padding: 30px 3em;
+    background-color: rgba(37, 41, 51, 0.8);
+}
+
+.genres-list h1 {
+    padding-left: 17px;
+}
+
+.genres-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres-text {
+    margin-bottom: 15px;
+}
+
+.genres-text a span{
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    padding: 2px 17px 1px;
+    margin-bottom: 25px !important;
+    transition: 0.25s ease-out;
+}
+
+.genres-text a span:hover {
+    color: deepskyblue;
 }

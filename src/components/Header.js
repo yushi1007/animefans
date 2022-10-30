@@ -4,9 +4,9 @@ import SearchBox from './SearchBox';
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="container">
       <a href="#" className="logo">
-        AnimeFans
+        Anime<span style={{color: "deepskyblue"}}>Fans</span>
       </a>
       <ul className="menu">
         {navigationItems.map((navigationItem, index) => {
