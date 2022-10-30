@@ -187,3 +187,13 @@ nav .menu li a:hover::after {
 .genres-text a span:hover {
     color: deepskyblue;
 }
+
+/* ----------------------------------------------- */
+/* ANIME SECTION */
+/* ----------------------------------------------- */
+.card-box {
+    border: 1px solid transparent;
+    margin: 20px 0 10px;
+    padding: 30px 3em;
+    background-color: rgba(37, 41, 51, 0.8);
+}
