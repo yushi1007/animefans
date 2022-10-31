@@ -12,7 +12,7 @@ const AnimeSection = () => {
     }
     getRecentRelease()
   }, [])
-  console.log(recentRelease)
+
   return (
       <div className="container">
         <div className="lists-box">
