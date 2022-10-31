@@ -2,13 +2,16 @@
 /* WHOLE PAGE SIZE */
 /* ----------------------------------------------- */
 * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
-.App {
-}
-
-.background {
+.App .background {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../asset/img/background.jpg');
     width: 100%;
     height: 100vh;
@@ -68,6 +71,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 20px 100px;
     border: 1px solid rgba(0,0,0,0.04);
 
 }
@@ -231,36 +235,25 @@ nav .menu li a:hover::after {
     border: 1px solid transparent;
     margin: 20px 0 10px;
     padding: 30px 3em;
+    color:#ffffff;
     background-color: rgba(37, 41, 51, 0.8);
 }
 
-.anime-card {
+.card .card-img {
+    width: 100%;
+    height: 410px;
+}
+
+.card .card-img img {
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.anime-card a {
-    width: fit-content;
-    margin: auto;
-}
-
-.anime-card .card-banner {
-    position: relative;
-    margin-bottom: 20px;
-    margin:0 ;
-    display: flex;
-    justify-content: center;
-}
-
-.anime-card .card-banner img {
-    height: 325px;
-    min-width: 225px;
-    border-radius: 8px;
-    width: auto;
     object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
+.card h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
 
