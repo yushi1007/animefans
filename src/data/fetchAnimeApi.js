@@ -15,3 +15,8 @@ export const fetchRecentRelease = async ()=>{
     const { data } = await axios.get(`${animeUrl}/recent-release`, options)
     return data;
   }
+
+export const fetchTopAiring = async ()=>{
+    const { data } = await axios.get(`${animeUrl}/top-airing`, options)
+    return data;
+  }

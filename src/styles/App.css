@@ -239,9 +239,14 @@ nav .menu li a:hover::after {
     background-color: rgba(37, 41, 51, 0.8);
 }
 
+.card {
+    margin-bottom: 20px;
+}
+
 .card .card-img {
     width: 100%;
     height: 410px;
+    margin-bottom: 10px;
 }
 
 .card .card-img img {
@@ -250,9 +255,45 @@ nav .menu li a:hover::after {
     object-fit: cover;
 }
 
-.card h3 {
-    font-size: 0.9rem;
+.card a h3 {
+    width: 260px;
     font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+.card a h3:hover {
+    color: deepskyblue;
+}
+
+.card .card-details {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-details span {
+    font-size: 14px;
+}
+
+.card .card-details .subordub{
+    border-width: 1.5px;
+    border-style: solid;
+    padding: 0px 3px 0px 3px;
+    border-color: deepskyblue;
+}
+
+.card .card-details .episode{
+    padding: 0px 3px 0px 3px;
+    border-radius: 2px;
+    background-color: #0087ca;
 }
 
 

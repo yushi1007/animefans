@@ -8,7 +8,6 @@ const Genres = () => {
         <h1>Genres</h1>
         <div className="genres-row">
             {genres.map((genre, index) => {
-                console.log(genre)
                 return(
                 <div key={index} className="genres-text">
                     <a href="#">
