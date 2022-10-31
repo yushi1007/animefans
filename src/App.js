@@ -1,14 +1,16 @@
 import './styles/App.css';
 import React from 'react'
 import Header from './components/Header';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import GenresSection from './components/sections/GenresSection';
+import GenreSection from './components/sections/GenreSection';
+import AnimeSection from './components/sections/AnimeSection';
 
 function App() {
   return (
     <div className="App">
+      <div className="background"></div>
       <Header />
-      <GenresSection />
+      <GenreSection />
+      <AnimeSection />
     </div>
   );
 }

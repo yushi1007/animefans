@@ -6,9 +6,14 @@
 }
 
 .App {
+}
+
+.background {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../asset/img/background.jpg');
     width: 100%;
     height: 100vh;
+    z-index: -1;
+    position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -156,7 +161,6 @@ nav .menu li a:hover::after {
 /* GENRES SECTION */
 /* ----------------------------------------------- */
 .genres-list {
-    color: hsla(0,0%,100%,.7);
     border: 1px solid transparent;
     margin: 20px 0 10px;
     padding: 30px 3em;
@@ -164,7 +168,11 @@ nav .menu li a:hover::after {
 }
 
 .genres-list h1 {
+    color: hsla(0,0%,100%,.7);
+    font-size: 24px;
+    font-weight: 600;
     padding-left: 17px;
+    text-transform: uppercase;
 }
 
 .genres-row {
@@ -187,3 +195,72 @@ nav .menu li a:hover::after {
 .genres-text a span:hover {
     color: deepskyblue;
 }
+
+/* ----------------------------------------------- */
+/* ANIME CARD SECTION */
+/* ----------------------------------------------- */
+.container .lists-box {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.container .lists-box h1 {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 21px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.container .lists-box h1:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    top: -6px;
+    left: 0;
+    height: 32px;
+    background: deepskyblue;
+}
+
+.card-box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid transparent;
+    margin: 20px 0 10px;
+    padding: 30px 3em;
+    background-color: rgba(37, 41, 51, 0.8);
+}
+
+.anime-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anime-card a {
+    width: fit-content;
+    margin: auto;
+}
+
+.anime-card .card-banner {
+    position: relative;
+    margin-bottom: 20px;
+    margin:0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.anime-card .card-banner img {
+    height: 325px;
+    min-width: 225px;
+    border-radius: 8px;
+    width: auto;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
