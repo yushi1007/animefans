@@ -1,16 +1,20 @@
 import React from "react";
 
 const AnimeCard = ({ animeList }) => {
-  console.log(animeList.animeImg);
   return (
     <div className="card">
-      <div className="card-img">
-        <img src={animeList.animeImg} alt={animeList.animeTitle} />
+      <a href="#">
+        <div className="card-img">
+          <img src={animeList.animeImg} alt={animeList.animeTitle} />
+        </div>
+      </a>
+      <a href="#" title={animeList.animeTitle}>
+        <h3 className="card-title">{animeList.animeTitle}</h3>
+      </a>
+      <div className="card-details">
+        <span className="subordub">{animeList.subOrDub}</span>
+        <span className="episode">EP {animeList.episodeNum} </span>
       </div>
-      <h3 className="card-title">{animeList.animeTitle}</h3>
-      <span className="card-details">
-        EP {animeList.episodeNum} | {animeList.subOrDub}
-      </span>
     </div>
   );
 };

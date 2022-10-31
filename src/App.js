@@ -1,8 +1,8 @@
-import './styles/App.css';
-import React from 'react'
-import Header from './components/Header';
-import GenreSection from './components/sections/GenreSection';
-import AnimeSection from './components/sections/AnimeSection';
+import "./styles/App.css";
+import React from "react";
+import Header from "./components/Header";
+import GenreSection from "./components/sections/GenreSection";
+import AnimeSection from "./components/sections/AnimeSection";
 
 function App() {
   return (
