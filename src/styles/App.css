@@ -166,7 +166,7 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 .genres-list {
     border: 1px solid transparent;
-    margin: 20px 0 10px;
+    margin: 20px 0 60px;
     padding: 30px 3em;
     background-color: rgba(37, 41, 51, 0.8);
 }
@@ -205,7 +205,6 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 .container .lists-box {
     padding-bottom: 60px;
-    padding-top: 60px;
 }
 
 .container .lists-box h1 {
