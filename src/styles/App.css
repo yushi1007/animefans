@@ -271,11 +271,22 @@ nav .menu li a:hover::after {
     color: deepskyblue;
 }
 
-.card .card-details {
+.card .recent-release {
     display: flex;
     padding-right: 10px;
     align-items: center;
     justify-content: space-between;
+}
+
+.card .top-airing {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card .popular {
+    color: hsla(0,0%,100%,.7);
 }
 
 .card .card-details span {
