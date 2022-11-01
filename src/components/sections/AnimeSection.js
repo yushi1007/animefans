@@ -28,8 +28,6 @@ const AnimeSection = () => {
     getPopular()
   }, [])
 
-  console.log(popular)
-
   return (
       <div className="container">
         <div className="lists-box">
