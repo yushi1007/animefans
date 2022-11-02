@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 const AnimeCard = ({ animeList }) => {
-  console.log(animeList);
   const checkAnimeInfo = () => {
     if (animeList.subOrDub) {
       return (
@@ -28,14 +28,14 @@ const AnimeCard = ({ animeList }) => {
   return (
     <div className="card">
       <div className="card-img">
-        <a href="#">
+        <Link to={`/anime-details/${animeList.animeId}`}>
           <img src={animeList.animeImg} alt={animeList.animeTitle} />
-        </a>
+        </Link>
       </div>
       <div className="card-title">
-        <a href="#" title={animeList.animeTitle}>
+        <Link to={`/anime-details/${animeList.animeId}`} title={animeList.animeTitle}>
           <h3>{animeList.animeTitle}</h3>
-        </a>
+        </Link>
       </div>
       {checkAnimeInfo()}
     </div>
