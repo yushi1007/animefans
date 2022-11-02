@@ -27,14 +27,16 @@ const AnimeCard = ({ animeList }) => {
 
   return (
     <div className="card">
-      <a href="#">
-        <div className="card-img">
+      <div className="card-img">
+        <a href="#">
           <img src={animeList.animeImg} alt={animeList.animeTitle} />
-        </div>
-      </a>
-      <a href="#" title={animeList.animeTitle}>
-        <h3 className="card-title">{animeList.animeTitle}</h3>
-      </a>
+        </a>
+      </div>
+      <div className="card-title">
+        <a href="#" title={animeList.animeTitle}>
+          <h3>{animeList.animeTitle}</h3>
+        </a>
+      </div>
       {checkAnimeInfo()}
     </div>
   );
