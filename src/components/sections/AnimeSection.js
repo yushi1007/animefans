@@ -1,49 +1,54 @@
 import React, { useState, useEffect } from "react";
-import { fetchRecentRelease, fetchTopAiring, fetchPopular } from "../../data/fetchAnimeApi";
+import {
+  fetchRecentRelease,
+  fetchTopAiring,
+  fetchPopular,
+} from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
+import GenresSection from "./GenreSection";
 
 const AnimeSection = () => {
   const [recentRelease, setRecentRelease] = useState([]);
-  const [topAiring, setTopAiring] = useState([])
-  const [popular, setPopular] = useState([])
+  const [topAiring, setTopAiring] = useState([]);
+  const [popular, setPopular] = useState([]);
 
   useEffect(() => {
     const getRecentRelease = () => {
-        fetchRecentRelease().
-        then((data) => setRecentRelease(data))
-    }
+      fetchRecentRelease().then((data) => setRecentRelease(data));
+    };
 
     const getTopAiring = () => {
-      fetchTopAiring().
-      then((data) => setTopAiring(data))
-    }
+      fetchTopAiring().then((data) => setTopAiring(data));
+    };
 
     const getPopular = () => {
-      fetchPopular().
-      then((data) => setPopular(data))
-    }
+      fetchPopular().then((data) => setPopular(data));
+    };
 
-    getRecentRelease()
-    getTopAiring()
-    getPopular()
-  }, [])
+    getRecentRelease();
+    getTopAiring();
+    getPopular();
+  }, []);
 
   return (
+    <React.Fragment>
+      <GenresSection />
       <div className="container">
         <div className="lists-box">
-            <h1>Recent Released</h1>
-            <AnimeLists animeLists={recentRelease}/>
+          <h1>Recent Released</h1>
+          <AnimeLists animeLists={recentRelease} />
         </div>
         <div className="lists-box">
-            <h1>Top Airing</h1>
-            <AnimeLists animeLists={topAiring}/>
+          <h1>Top Airing</h1>
+          <AnimeLists animeLists={topAiring} />
         </div>
         <div className="lists-box">
-            <h1>Popular</h1>
-            <AnimeLists animeLists={popular}/>
+          <h1>Popular</h1>
+          <AnimeLists animeLists={popular} />
         </div>
       </div>
-  ) 
+    </React.Fragment>
+  );
 };
 
 export default AnimeSection;

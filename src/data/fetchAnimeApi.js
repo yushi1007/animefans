@@ -25,3 +25,8 @@ export const fetchPopular = async ()=>{
     const { data } = await axios.get(`${animeUrl}/popular`, options)
     return data;
   }
+
+export const fetchAnimeDetails = async (animeId)=>{
+    const { data } = await axios.get(`${animeUrl}/anime-details/${animeId}`, options)
+    return data;
+  }
