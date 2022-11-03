@@ -347,8 +347,8 @@ nav .menu li a:hover::after {
 }
 
 .details-card {
-    width: 650px;
-    height: 350px;
+    width: 1200px;
+    height: 685px;
     display: flex;
     overflow: hidden;
     background: #000;
@@ -357,7 +357,7 @@ nav .menu li a:hover::after {
 
 .card-thumbnail {
     position: relative;
-    width: 250px;
+    width: 425px;
     overflow: hidden;
 }
 
@@ -369,7 +369,7 @@ nav .menu li a:hover::after {
 }
 
 .card-body {
-    width: 400px;
+    width: 725px;
     padding: 2rem;
     color: #fff;
     display: flex;
