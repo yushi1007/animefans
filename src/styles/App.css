@@ -336,5 +336,44 @@ nav .menu li a:hover::after {
     background-color: #0087ca;
 }
 
+/* ----------------------------------------------- */
+/* DETAILS PAGE */
+/* ----------------------------------------------- */
+.details-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
+.details-card {
+    width: 650px;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    background: #000;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.7);
+}
 
+.card-thumbnail {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+}
+
+.card-thumbnail img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 400px;
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

@@ -2,8 +2,7 @@ import "./styles/App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import GenreSection from "./components/sections/GenreSection";
-import AnimeSection from "./components/sections/AnimeSection";
+import { GenreSection, AnimeSection } from './components/sections'
 import AnimeDetails from "./components/pages/AnimeDetails";
 
 function App() {
