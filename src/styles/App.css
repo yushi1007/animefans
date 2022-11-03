@@ -341,14 +341,14 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 .details-body {
     display: flex;
-    align-items: center;
+    padding-top: 60px;
     justify-content: center;
     min-height: 100vh;
 }
 
 .details-card {
-    width: 650px;
-    height: 350px;
+    width: 1536px;
+    height: 700px;
     display: flex;
     overflow: hidden;
     background: #000;
@@ -357,7 +357,7 @@ nav .menu li a:hover::after {
 
 .card-thumbnail {
     position: relative;
-    width: 250px;
+    width: 500px;
     overflow: hidden;
 }
 
@@ -369,11 +369,52 @@ nav .menu li a:hover::after {
 }
 
 .card-body {
-    width: 400px;
+    width: 1000px;
     padding: 2rem;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     align-items: flex-start;
+    font-size: 15px;
+    color: #e8e8e8;
+}
+
+.anime-title {
+    color: #e8e8e8;
+    font-size: 30px;
+}
+
+.anime-title-two {
+    margin-top: -20px;
+    font-size: 18px;
+    color: #b7b7b7;
+    display: block;
+}
+
+p span {
+    margin-right: 10px;
+}
+
+.card-description {
+    text-align: justify;
+    color: #b7b7b7;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.watchnow-btn{
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 14px 20px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.watchnow-btn span {
+    margin-left: 10px;
 }
