@@ -428,7 +428,7 @@ nav .menu li a:hover::after {
 }
 
 .row-item {
-    padding-right: 15rem;
+    padding-right: 5rem;
 }
 
 .anime-details-widget ul {
@@ -469,4 +469,11 @@ nav .menu li a:hover::after {
 
 .watchnow-btn span {
     margin-left: 10px;
+}
+
+/* ----------------------------------------------- */
+/* PLAYER PAGE */
+/* ----------------------------------------------- */
+.player-box {
+    width: 100%;
 }

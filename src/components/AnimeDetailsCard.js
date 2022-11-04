@@ -1,5 +1,6 @@
 import React from "react";
 import AnimeGenres from "./AnimeGenres";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
@@ -49,10 +50,12 @@ const AnimeDetailsCard = ({ animeDetails }) => {
             </div>
           </div>
         </div>
-        <button className="watchnow-btn">
-          <FontAwesomeIcon className="icon" icon={faPlay} />
-          <span>Watch Now</span>
-        </button>
+        <Link to={`/watch/${animeDetails?.episodesList[0]?.episodeId}`}>
+          <button className="watchnow-btn">
+            <FontAwesomeIcon className="icon" icon={faPlay} />
+            <span>Watch Now</span>
+          </button>
+        </Link>
       </div>
     </div>
   );

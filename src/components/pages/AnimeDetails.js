@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchAnimeDetails } from "../../data/fetchAnimeApi";
 import AnimeDetailsCard from "../AnimeDetailsCard";
+import AnimeVideo from "./AnimePlayer";
 
 const AnimeDetails = () => {
   const { id } = useParams();
