@@ -19,11 +19,36 @@ const AnimeDetailsCard = ({ animeDetails }) => {
       <div className="card-body">
         <span className="anime-title">{animeDetails?.animeTitle}</span>
         <span className="anime-title-two">{animeDetails?.otherNames}</span>
-        <p>
-          <span className="date">{animeDetails?.releasedDate}</span>
-          {genreItems}
-        </p>
+        <div className="genre-box">{genreItems}</div>
         <p className="card-description">{animeDetails?.synopsis}</p>
+        <div className="anime-details-widget">
+          <div className="row">
+            <div className="row-one">
+              <ul>
+                <li>
+                  <span className="type">Type:</span>
+                  {animeDetails?.type}
+                </li>
+                <li>
+                  <span className="date">Released:</span>
+                  {animeDetails?.releasedDate}
+                </li>
+              </ul>
+            </div>
+            <div className="row-two">
+              <ul>
+                <li>
+                  <span className="type">Status:</span>
+                  {animeDetails?.status}
+                </li>
+                <li>
+                  <span className="date">Episodes:</span>
+                  {animeDetails?.totalEpisodes}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <button className="watchnow-btn">
           <FontAwesomeIcon className="icon" icon={faPlay} />
           <span>Watch Now</span>

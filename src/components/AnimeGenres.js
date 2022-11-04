@@ -1,7 +1,8 @@
 import React from "react";
 
 const AnimeGenres = ({ genre }) => {
-  return <span>{genre}</span>;
+  
+  return <div className="anime-genre">{genre}</div>;
 };
 
 export default AnimeGenres;

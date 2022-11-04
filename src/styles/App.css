@@ -351,7 +351,7 @@ nav .menu li a:hover::after {
     height: 700px;
     display: flex;
     overflow: hidden;
-    background: #000;
+    background-color: rgba(37, 41, 51, 0.8);
     box-shadow: -5px 5px 10px rgba(0,0,0,0.7);
 }
 
@@ -392,15 +392,69 @@ nav .menu li a:hover::after {
     display: block;
 }
 
-p span {
-    margin-right: 10px;
-}
-
 .card-description {
     text-align: justify;
     color: #b7b7b7;
     font-size: 18px;
     line-height: 30px;
+}
+
+.genre-box {
+    display: flex;
+} 
+
+.anime-genre {
+    padding: 0px 20px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.anime-genre:first-child {
+    padding-right: 20px;
+    border-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+.anime-genre:last-child {
+    padding-left: 20px;
+    border-right: 0px !important;
+    padding-right: 0px!important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -18px;
+}
+
+.anime-details-widget {
+    margin-bottom: 15px;
+}
+
+.row-one {
+    
+}
+
+.anime-details-widget ul {
+    margin-bottom: 20px;
+}
+
+.anime-details-widget ul li {
+    list-style: none;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 40px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.anime-details-widget ul li span {
+    color: #b7b7b7;
+    width: 115px;
+    display: inline-block;
 }
 
 .watchnow-btn{
