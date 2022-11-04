@@ -23,7 +23,7 @@ const AnimeDetailsCard = ({ animeDetails }) => {
         <p className="card-description">{animeDetails?.synopsis}</p>
         <div className="anime-details-widget">
           <div className="row">
-            <div className="row-one">
+            <div className="row-item">
               <ul>
                 <li>
                   <span className="type">Type:</span>
@@ -35,7 +35,7 @@ const AnimeDetailsCard = ({ animeDetails }) => {
                 </li>
               </ul>
             </div>
-            <div className="row-two">
+            <div className="row-item">
               <ul>
                 <li>
                   <span className="type">Status:</span>

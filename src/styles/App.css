@@ -434,8 +434,8 @@ nav .menu li a:hover::after {
     margin-bottom: 15px;
 }
 
-.row-one {
-    
+.row-item {
+    padding-right: 15rem;
 }
 
 .anime-details-widget ul {
