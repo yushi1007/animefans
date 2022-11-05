@@ -19,8 +19,8 @@ const AnimeVideo = () => {
           console.log(data)
           setAnimeDetails(data)
       })
-
       }, [id])
+      
   return (
     <div className="container">
         <AnimePlayerCard video={video} />

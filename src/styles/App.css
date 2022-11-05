@@ -340,13 +340,31 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 /* DETAILS PAGE */
 /* ----------------------------------------------- */
+.error-page .error-message div {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .error-page {
-    color: white;
     display: flex;
     text-align: center;
     height: calc(100vh - 150px);
     align-items: center;
     justify-content: center;
+}
+
+.error-message div a div {
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    border-radius: 5px;
 }
 
 .details-body {
@@ -483,10 +501,8 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 /* PLAYER PAGE */
 /* ----------------------------------------------- */
-.react-player {
-
-}
-
 .player-wrapper {
-
+    position: relative;
+    padding-top: 5%;
+    margin-bottom: 60px;
 }
