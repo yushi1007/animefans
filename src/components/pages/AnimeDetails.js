@@ -24,7 +24,14 @@ const AnimeDetails = () => {
     }
   };
 
-  console.log(handleError());
+  const handleStatus = () => {
+    if (animeDetails?.status?.toLowerCase() === "upcoming") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   return (
     <React.Fragment>
       {handleError() ? (
@@ -33,7 +40,10 @@ const AnimeDetails = () => {
         </div>
       ) : (
         <div className="container details-body">
-          <AnimeDetailsCard animeDetails={animeDetails} />
+          <AnimeDetailsCard
+            animeDetails={animeDetails}
+            handleStatus={handleStatus()}
+          />
         </div>
       )}
     </React.Fragment>
