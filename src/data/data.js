@@ -10,11 +10,11 @@ export const navigationItems = [
   },
   {
     name: "Most Popular",
-    href: "most popular",
+    href: "popular",
   },
   {
     name: "Top Airing",
-    href: "top airing",
+    href: "topairing",
   },
 ];
 
