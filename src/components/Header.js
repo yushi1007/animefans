@@ -5,7 +5,7 @@ import SearchBox from './SearchBox';
 const Header = () => {
   return (
     <nav className="container">
-      <a href="#" className="logo">
+      <a href="/" className="logo">
         Anime<span style={{color: "deepskyblue"}}>Fans</span>
       </a>
       <ul className="menu">
