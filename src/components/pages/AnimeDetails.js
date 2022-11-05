@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { fetchAnimeDetails } from "../../data/fetchAnimeApi";
 import AnimeDetailsCard from "../AnimeDetailsCard";
 import ErrorMessage from "../ErrorMessage";
-import AnimeVideo from "./AnimePlayer";
 
 const AnimeDetails = () => {
   const { id } = useParams();
