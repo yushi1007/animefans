@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
-const AnimeDetailsCard = ({ animeDetails }) => {
+const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
   const genreItems = animeDetails?.genres?.map((genre, index) => {
     return <AnimeGenreCard key={index} genre={genre} />;
   });
 
   const checkEpLength = () => {
-    if(!animeDetails?.error) {
-      return '/watch/' + animeDetails?.episodesList[0]?.episodeId;
+    if (!animeDetails?.error) {
+      return "/watch/" + animeDetails?.episodesList[0]?.episodeId;
     } else {
-      return '/'
+      return "/";
     }
-  }
+  };
   if (!animeDetails) return <div>loading...</div>;
 
   return (
@@ -56,12 +56,16 @@ const AnimeDetailsCard = ({ animeDetails }) => {
             </div>
           </div>
         </div>
-        <Link to={checkEpLength()}>
-          <button className="watchnow-btn">
-            <FontAwesomeIcon className="icon" icon={faPlay} />
-            <span>Watch Now</span>
-          </button>
-        </Link>
+        {handleStatus ? (
+          <div className="coming-soon">Coming soon</div>
+        ) : (
+          <Link to={checkEpLength()}>
+            <button className="watchnow-btn">
+              <FontAwesomeIcon className="icon" icon={faPlay} />
+              <span>Watch Now</span>
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

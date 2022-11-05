@@ -498,6 +498,12 @@ nav .menu li a:hover::after {
     margin-left: 10px;
 }
 
+.coming-soon {
+    font-size: 18pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 /* ----------------------------------------------- */
 /* PLAYER PAGE */
 /* ----------------------------------------------- */
