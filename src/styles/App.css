@@ -340,6 +340,15 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 /* DETAILS PAGE */
 /* ----------------------------------------------- */
+.error-page {
+    color: white;
+    display: flex;
+    text-align: center;
+    height: calc(100vh - 150px);
+    align-items: center;
+    justify-content: center;
+}
+
 .details-body {
     display: flex;
     padding-top: 60px;
@@ -474,6 +483,10 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 /* PLAYER PAGE */
 /* ----------------------------------------------- */
-.player-box {
-    width: 100%;
+.react-player {
+
+}
+
+.player-wrapper {
+
 }

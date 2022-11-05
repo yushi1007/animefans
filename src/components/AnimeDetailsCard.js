@@ -5,11 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const AnimeDetailsCard = ({ animeDetails }) => {
-  console.log(animeDetails);
   const genreItems = animeDetails?.genres?.map((genre, index) => {
     return <AnimeGenres key={index} genre={genre} />;
   });
 
+  const checkEpLength = () => {
+    if(!animeDetails?.error) {
+      return '/watch/' + animeDetails?.episodesList[0]?.episodeId;
+    } else {
+      return '/'
+    }
+  }
   if (!animeDetails) return <div>loading...</div>;
 
   return (
@@ -50,7 +56,7 @@ const AnimeDetailsCard = ({ animeDetails }) => {
             </div>
           </div>
         </div>
-        <Link to={`/watch/${animeDetails?.episodesList[0]?.episodeId}`}>
+        <Link to={checkEpLength()}>
           <button className="watchnow-btn">
             <FontAwesomeIcon className="icon" icon={faPlay} />
             <span>Watch Now</span>
