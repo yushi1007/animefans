@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const EpisodeCard = ({ episode }) => {
   console.log(episode);
   return (
-    <div className="episode-card">
-      <Link to={`/watch/${episode?.episodeId}`}>{episode.episodeNum}</Link>
-    </div>
+    <Link className="episode-link" to={`/watch/${episode?.episodeId}`} activeClass="active">
+      <div className="episode-card">{episode?.episodeNum}</div>
+    </Link>
   );
 };
 

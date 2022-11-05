@@ -1,12 +1,12 @@
 import React from "react";
-import AnimeGenres from "./AnimeGenres";
+import AnimeGenreCard from "./AnimeGenreCard";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const AnimeDetailsCard = ({ animeDetails }) => {
   const genreItems = animeDetails?.genres?.map((genre, index) => {
-    return <AnimeGenres key={index} genre={genre} />;
+    return <AnimeGenreCard key={index} genre={genre} />;
   });
 
   const checkEpLength = () => {
