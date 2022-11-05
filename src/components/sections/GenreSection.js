@@ -1,11 +1,11 @@
 import React from 'react'
-import Genres from '../Genres'
+import GenresNavigation from '../GenresNavigation'
 
 
 const GenresSection = () => {
   return (
     <div className="container">
-        <Genres />
+        <GenresNavigation />
     </div>
   )
 }
