@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { genres } from '../data/data'
 
 const Genres = () => {
@@ -10,9 +10,9 @@ const Genres = () => {
             {genres.map((genre, index) => {
                 return(
                 <div key={index} className="genres-text">
-                    <Link to={`/genre/${genre}`}>
-                        <span>{genre}</span>
-                    </Link>
+                    <NavLink to={`/genre/${genre}`}>
+                        {genre}
+                    </NavLink>
                 </div>
                 )
 })}
