@@ -1,13 +1,12 @@
-import React from 'react'
-import GenresNavigation from '../GenresNavigation'
-
+import React from "react";
+import GenresNavigation from "../GenresNavigation";
 
 const GenresSection = () => {
   return (
     <div className="container">
-        <GenresNavigation />
+      <GenresNavigation />
     </div>
-  )
-}
+  );
+};
 
-export default GenresSection
+export default GenresSection;

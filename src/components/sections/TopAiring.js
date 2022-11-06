@@ -14,15 +14,15 @@ const TopAiring = () => {
   }, []);
   return (
     <React.Fragment>
-    <GenresSection />
-    <div className="container">
-      <div className="lists-box">
-        <h1>Top Airing</h1>
-        <AnimeLists animeLists={topAiring} />
+      <GenresSection />
+      <div className="container">
+        <div className="lists-box">
+          <h1>Top Airing</h1>
+          <AnimeLists animeLists={topAiring} />
+        </div>
       </div>
-    </div>
-  </React.Fragment>
-  )
-}
+    </React.Fragment>
+  );
+};
 
-export default TopAiring
+export default TopAiring;

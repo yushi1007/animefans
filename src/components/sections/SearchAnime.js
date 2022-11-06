@@ -26,7 +26,7 @@ const SearchAnime = () => {
           <ErrorMessage />
         </div>
       ) : (
-        <>
+        <React.Fragment>
           <GenresSection />
           <div className="container">
             <div className="lists-box">
@@ -34,7 +34,7 @@ const SearchAnime = () => {
               <AnimeLists animeLists={searchedAnime} />
             </div>
           </div>
-        </>
+        </React.Fragment>
       )}
     </React.Fragment>
   );

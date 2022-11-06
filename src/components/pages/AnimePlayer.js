@@ -6,6 +6,7 @@ import {
   fetchAnimeDetails,
 } from "../../data/fetchAnimeApi";
 import AnimePlayerDetails from "../AnimePlayerDetails";
+import Loader from "../Loader";
 
 const AnimeVideo = () => {
   const { id } = useParams();
@@ -26,8 +27,8 @@ const AnimeVideo = () => {
       .then((data) => {
         setAnimeDetails(data);
       });
-  }, [id]);
-
+  }, [id, animeId]);
+  if(!video && !animeDetails) return <Loader />
   return (
     <div className="container">
       <AnimePlayerCard video={video} />

@@ -2,265 +2,265 @@
 /* WHOLE PAGE SIZE */
 /* ----------------------------------------------- */
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .App .background {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url('../asset/img/background.jpg');
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url("../asset/img/background.jpg");
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
+  .container {
+    max-width: 640px;
+  }
 }
 @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+  .container {
+    max-width: 768px;
+  }
 }
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
+  .container {
+    max-width: 1024px;
+  }
 }
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
+  .container {
+    max-width: 1280px;
+  }
 }
 @media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
+  .container {
+    max-width: 1536px;
+  }
 }
 
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px 100px;
-    border: 1px solid rgba(0,0,0,0.04);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 100px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .logo {
-    color: #fff;
-    font-size: x-large;
-    font-weight: 700;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 700;
 }
 
 nav .menu {
-    display: flex;
+  display: flex;
 }
 
 nav .menu li a {
-    height: 40px;
-    line-height: 43px;
-    margin: 0px 22px;
-    display: flex;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: 1px;
+  height: 40px;
+  line-height: 43px;
+  margin: 0px 22px;
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .search {
-    width: 250px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    padding: 0px 20px;
+  width: 250px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
 }
 
 .search input {
-    width: 100%;
-    height: 30px;
-    border: none;
-    outline: none;
-    background: transparent;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 ::-moz-placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 ::-ms-input-placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .search .icon {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-nav .menu li a{
-    display: inline-block;
-    position: relative;
-    transition: 0.25s ease-out;
+nav .menu li a {
+  display: inline-block;
+  position: relative;
+  transition: 0.25s ease-out;
 }
 
 nav .menu li a:hover {
-    color: deepskyblue;
+  color: deepskyblue;
 }
 
 nav .menu li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 nav .menu li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ----------------------------------------------- */
 /* GENRES SECTION */
 /* ----------------------------------------------- */
 .genres-list {
-    border: 1px solid transparent;
-    margin: 20px 0 60px;
-    padding: 30px 3em;
-    background-color: rgba(37, 41, 51, 0.8);
+  border: 1px solid transparent;
+  margin: 20px 0 60px;
+  padding: 30px 3em;
+  background-color: rgba(37, 41, 51, 0.8);
 }
 
 .genres-list h1 {
-    color: hsla(0,0%,100%,.7);
-    font-size: 24px;
-    font-weight: 600;
-    padding-left: 17px;
-    text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 17px;
+  text-transform: uppercase;
 }
 
 .genres-row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .genres-text {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.genres-text a{
-    color: hsla(0,0%,100%,.7);
-    text-decoration: none;
-    padding: 2px 17px 1px;
-    margin-bottom: 25px !important;
-    transition: 0.25s ease-out;
+.genres-text a {
+  color: hsla(0, 0%, 100%, 0.7);
+  text-decoration: none;
+  padding: 2px 17px 1px;
+  margin-bottom: 25px !important;
+  transition: 0.25s ease-out;
 }
 
 .genres-text a:hover {
-    color: deepskyblue;
+  color: deepskyblue;
 }
 
 /* ----------------------------------------------- */
 /* ANIME CARD SECTION */
 /* ----------------------------------------------- */
 .container .lists-box {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .container .lists-box h1 {
-    color: #ffffff;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 21px;
-    padding-left: 20px;
-    position: relative;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 21px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .container .lists-box h1:after {
-    content: "";
-    position: absolute;
-    width: 4px;
-    top: -6px;
-    left: 0;
-    height: 32px;
-    background: deepskyblue;
+  content: "";
+  position: absolute;
+  width: 4px;
+  top: -6px;
+  left: 0;
+  height: 32px;
+  background: deepskyblue;
 }
 
 .card-box {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    border: 1px solid transparent;
-    margin: 35px 0 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid transparent;
+  margin: 35px 0 10px;
 }
 
 .card {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.card-img ~ .card-title h3{
-    width: 260px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    color: #ffffff;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    -webkit-transition: all .1s ease-out;
-    transition: all .1s ease-out;
+.card-img ~ .card-title h3 {
+  width: 260px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .card a h3 {
-    -webkit-transition: all .1s ease-out;
-    transition: all .1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .card a h3:hover,
 .card-img:hover ~ .card-title h3 {
-    color: deepskyblue;
+  color: deepskyblue;
 }
 
 /* .card-title + .card-img {
@@ -280,273 +280,272 @@ nav .menu li a:hover::after {
 } */
 
 .card .card-img {
-    width: 100%;
-    height: 410px;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
-    box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
-    -webkit-transition: all .1s ease-out;
-    transition: all .2s ease;
+  width: 100%;
+  height: 410px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.2s ease;
 }
 
 .card .card-img:hover {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card .card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
 .card .recent-release {
-    color: #fff;
-    display: flex;
-    padding-right: 10px;
-    align-items: center;
-    justify-content: space-between;
+  color: #fff;
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card .top-airing {
-    color: #fff;
-    display: flex;
-    padding-right: 10px;
-    align-items: center;
-    justify-content: flex-end;
+  color: #fff;
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .card .popular {
-    color: hsla(0,0%,100%,.7);
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
 .card .card-details span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.card .card-details .subordub{
-    border-width: 1.5px;
-    border-style: solid;
-    padding: 0px 3px 0px 3px;
-    border-color: deepskyblue;
+.card .card-details .subordub {
+  border-width: 1.5px;
+  border-style: solid;
+  padding: 0px 3px 0px 3px;
+  border-color: deepskyblue;
 }
 
-.card .card-details .episode{
-    padding: 0px 3px 0px 3px;
-    border-radius: 2px;
-    background-color: #0087ca;
+.card .card-details .episode {
+  padding: 0px 3px 0px 3px;
+  border-radius: 2px;
+  background-color: #0087ca;
 }
 
 /* ----------------------------------------------- */
 /* DETAILS PAGE */
 /* ----------------------------------------------- */
 .error-page .error-message div {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .error-page {
-    display: flex;
-    text-align: center;
-    height: calc(100vh - 150px);
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  text-align: center;
+  height: calc(100vh - 150px);
+  align-items: center;
+  justify-content: center;
 }
 
 .error-message div a div {
-    margin-top: 20px;
-    background: transparent;
-    cursor: pointer;
-    border: 2px solid deepskyblue;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 12px 15px;
-    border-radius: 5px;
+  margin-top: 20px;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid deepskyblue;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 15px;
+  border-radius: 5px;
 }
 
 .details-body {
-    display: flex;
-    padding-top: 60px;
-    justify-content: center;
+  display: flex;
+  padding-top: 60px;
+  justify-content: center;
 }
 
 .details-card {
-    width: 1536px;
-    height: 700px;
-    display: flex;
-    overflow: hidden;
+  width: 1536px;
+  height: 700px;
+  display: flex;
+  overflow: hidden;
 }
 
 .card-thumbnail {
-    position: relative;
-    width: 500px;
-    overflow: hidden;
+  position: relative;
+  width: 500px;
+  overflow: hidden;
 }
 
 .card-thumbnail img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-body {
-    width: 1000px;
-    padding: 2rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
-    font-size: 15px;
-    color: #e8e8e8;
+  width: 1000px;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  font-size: 15px;
+  color: #e8e8e8;
 }
 
 .anime-title {
-    color: #e8e8e8;
-    font-size: 30px;
+  color: #e8e8e8;
+  font-size: 30px;
 }
 
 .anime-title-two {
-    margin-top: -20px;
-    font-size: 18px;
-    color: #b7b7b7;
-    display: block;
+  margin-top: -20px;
+  font-size: 18px;
+  color: #b7b7b7;
+  display: block;
 }
 
 .card-description {
-    text-align: justify;
-    color: #b7b7b7;
-    font-size: 18px;
-    line-height: 30px;
+  text-align: justify;
+  color: #b7b7b7;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .genre-box {
-    display: flex;
-} 
+  display: flex;
+}
 
 .anime-genre {
-    padding: 0px 20px;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+  padding: 0px 20px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .anime-genre:first-child {
-    padding-right: 20px;
-    border-left: 0px !important;
-    padding-left: 0px !important;
+  padding-right: 20px;
+  border-left: 0px !important;
+  padding-left: 0px !important;
 }
 
 .anime-genre:last-child {
-    padding-left: 20px;
-    border-right: 0px !important;
-    padding-right: 0px!important;
+  padding-left: 20px;
+  border-right: 0px !important;
+  padding-right: 0px !important;
 }
 
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -18px;
 }
 
 .row-item {
-    padding-right: 5rem;
+  padding-right: 5rem;
 }
 
 .anime-details-widget ul {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .anime-details-widget ul li {
-    list-style: none;
-    font-size: 15px;
-    color: #ffffff;
-    line-height: 40px;
-    position: relative;
-    padding-left: 18px;
+  list-style: none;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 40px;
+  position: relative;
+  padding-left: 18px;
 }
 
 .anime-details-widget ul li span {
-    color: #b7b7b7;
-    width: 115px;
-    display: inline-block;
+  color: #b7b7b7;
+  width: 115px;
+  display: inline-block;
 }
 
-.watchnow-btn{
-    background: transparent;
-    color: #ffffff;
-    cursor: pointer;
-    border: 2px solid deepskyblue;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 14px 20px;
-    border-radius: 5px;
-    transition: 0.2s ease-in-out;
+.watchnow-btn {
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid deepskyblue;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 20px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
 }
 
 .watchnow-btn:hover {
-    background-color: deepskyblue;
+  background-color: deepskyblue;
 }
 
 .watchnow-btn span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .coming-soon {
-    font-size: 18pt;
-    font-weight: 600;
-    letter-spacing: 1px;
+  font-size: 18pt;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* ----------------------------------------------- */
 /* PLAYER PAGE */
 /* ----------------------------------------------- */
 .player-wrapper {
-    position: relative;
-    padding-top: 5%;
-    margin-bottom: 60px;
+  position: relative;
+  padding-top: 5%;
+  margin-bottom: 60px;
 }
 
 .episodes-box {
-    display: -webkit-box;
-    display: flex; 
-    flex-wrap: wrap; 
-    -webkit-box-pack: justify;
-    margin-top: 25px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  margin-top: 25px;
 }
 
 .episode-link {
-    width: 100%;
-    height: 100%;
-    max-height: 45px;
-    max-width: 80px!important;
-    background: rgba(255, 255, 255, 0.2);
-    text-align: center;
-    align-items: center;
-    border-radius: 4px;
-    font-size: 15px;
-    padding: 10px;
-    margin:0px 15px 20px 0;
+  width: 100%;
+  height: 100%;
+  max-height: 45px;
+  max-width: 80px !important;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0px 15px 20px 0;
 }
 
- a.episode-link{
-    color: #ffffff;
-    -webkit-transition: all, 0.3s;
-    -o-transition: all, 0.3s;
-    transition: all, 0.3s;
+a.episode-link {
+  color: #ffffff;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 a.episode-link:hover {
-    color: deepskyblue;;
+  color: deepskyblue;
 }
 
 a:is(:link, :active, :visited).active {
-    color: deepskyblue;
+  color: deepskyblue;
 }

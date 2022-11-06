@@ -4,14 +4,14 @@ import AnimeLists from "../AnimeLists";
 import GenresSection from "./GenreSection";
 
 const Popular = () => {
-    const [popular, setPopular] = useState([]);
-  
-    useEffect(() => {
-      const getPopular = () => {
-        fetchPopular().then((data) => setPopular(data));
-      };
-      getPopular();
-    }, []);
+  const [popular, setPopular] = useState([]);
+
+  useEffect(() => {
+    const getPopular = () => {
+      fetchPopular().then((data) => setPopular(data));
+    };
+    getPopular();
+  }, []);
 
   return (
     <React.Fragment>
@@ -23,7 +23,7 @@ const Popular = () => {
         </div>
       </div>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Popular
+export default Popular;

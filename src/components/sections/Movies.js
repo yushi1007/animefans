@@ -4,29 +4,29 @@ import AnimeLists from "../AnimeLists";
 import GenresSection from "./GenreSection";
 
 const Movies = () => {
-    const [movies, setMovies] = useState([]);
-  
-    useEffect(() => {
-      const getMovies = () => {
-        fetchMovies().then((data) => {
-           console.log(data)
-            setMovies(data);
-        } )
-      };
-      getMovies();
-    }, []);
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const getMovies = () => {
+      fetchMovies().then((data) => {
+        console.log(data);
+        setMovies(data);
+      });
+    };
+    getMovies();
+  }, []);
 
   return (
     <React.Fragment>
-    <GenresSection />
-    <div className="container">
-      <div className="lists-box">
-        <h1>Movies</h1>
-        <AnimeLists animeLists={movies} />
+      <GenresSection />
+      <div className="container">
+        <div className="lists-box">
+          <h1>Movies</h1>
+          <AnimeLists animeLists={movies} />
+        </div>
       </div>
-    </div>
-  </React.Fragment>
-  )
-}
+    </React.Fragment>
+  );
+};
 
-export default Movies
+export default Movies;

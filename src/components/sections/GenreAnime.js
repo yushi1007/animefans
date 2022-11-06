@@ -13,8 +13,8 @@ const GenreAnime = () => {
       fetchGenre(term).then((data) => setGenreData(data));
     };
     getGenre(genre);
-  }, [genreData]);
-  if (!genreData) return <div>loading...</div>;
+  }, [genre, genreData]);
+
   return (
     <React.Fragment>
       <GenresSection />
