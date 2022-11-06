@@ -8,7 +8,10 @@ const Movies = () => {
   
     useEffect(() => {
       const getMovies = () => {
-        fetchMovies().then((data) => setMovies(data));
+        fetchMovies().then((data) => {
+           console.log(data)
+            setMovies(data);
+        } )
       };
       getMovies();
     }, []);
