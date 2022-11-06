@@ -2,10 +2,10 @@ import "./styles/App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import { Genre, AnimeSection, Movies, Popular, TopAiring } from './components/sections'
+import { GenreAnime, AnimeSection, Movies, Popular, TopAiring } from './components/sections'
 import AnimeDetails from "./components/pages/AnimeDetails";
 import AnimeVideo from "./components/pages/AnimePlayer";
-import AnimeGenre from "./components/pages/AnimeGenre";
+import SearchAnime from "./components/sections/SearchAnime";
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
           <Route path="/movies" element={<Movies />}/>
           <Route path="/popular" element={<Popular />}/>
           <Route path="/topairing" element={<TopAiring />}/>
-          <Route path="/genre/:genre" element={<Genre />}/>
+          <Route path="/genre/:genre" element={<GenreAnime />}/>
+          <Route path="/search/:searchTerm" element={<SearchAnime />}/>
         </Routes>
       </div>
     </BrowserRouter>

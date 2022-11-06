@@ -4,7 +4,7 @@ import { fetchGenre } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import GenresSection from "./GenreSection";
 
-const Genre = () => {
+const GenreAnime = () => {
   const { genre } = useParams();
   const [genreData, setGenreData] = useState([]);
 
@@ -28,4 +28,4 @@ const Genre = () => {
   );
 };
 
-export default Genre;
+export default GenreAnime;

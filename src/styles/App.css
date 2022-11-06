@@ -130,6 +130,7 @@ nav .menu li a {
 }
 
 .search .icon {
+    cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -188,7 +189,7 @@ nav .menu li a:hover::after {
     margin-bottom: 15px;
 }
 
-.genres-text a span{
+.genres-text a{
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
     padding: 2px 17px 1px;
@@ -196,7 +197,11 @@ nav .menu li a:hover::after {
     transition: 0.25s ease-out;
 }
 
-.genres-text a span:hover {
+.genres-text a:hover {
+    color: deepskyblue;
+}
+
+.genres-row .genres-text .active {
     color: deepskyblue;
 }
 
