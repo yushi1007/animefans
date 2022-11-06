@@ -6,15 +6,15 @@ export const navigationItems = [
   },
   {
     name: "Movies",
-    href: "movies",
+    href: "/movies",
   },
   {
     name: "Most Popular",
-    href: "popular",
+    href: "/popular",
   },
   {
     name: "Top Airing",
-    href: "topairing",
+    href: "/topairing",
   },
 ];
 

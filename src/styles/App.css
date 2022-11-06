@@ -201,10 +201,6 @@ nav .menu li a:hover::after {
     color: deepskyblue;
 }
 
-.genres-row .genres-text .active {
-    color: deepskyblue;
-}
-
 /* ----------------------------------------------- */
 /* ANIME CARD SECTION */
 /* ----------------------------------------------- */
