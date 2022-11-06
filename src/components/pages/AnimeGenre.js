@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const AnimeGenre = () => {
-  return (
-    <div>AnimeGenre</div>
-  )
-}
+  return <div>AnimeGenre</div>;
+};
 
-export default AnimeGenre
+export default AnimeGenre;

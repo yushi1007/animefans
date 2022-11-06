@@ -3,6 +3,7 @@ import AnimeGenreCard from "./AnimeGenreCard";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import Loader from "./Loader";
 
 const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
   const genreItems = animeDetails?.genres?.map((genre, index) => {
@@ -16,12 +17,12 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
       return "/";
     }
   };
-  if (!animeDetails) return <div>loading...</div>;
+  if (!animeDetails) return <Loader />;
 
   return (
     <div className="details-card">
       <div className="card-thumbnail">
-        <img src={animeDetails?.animeImg} />
+        <img src={animeDetails?.animeImg} alt={animeDetails?.animeTitle}/>
       </div>
       <div className="card-body">
         <span className="anime-title">{animeDetails?.animeTitle}</span>

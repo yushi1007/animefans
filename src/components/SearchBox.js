@@ -23,7 +23,11 @@ const SearchBox = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <FontAwesomeIcon onClick={handleSubmit} className="icon" icon={faMagnifyingGlass} />
+      <FontAwesomeIcon
+        onClick={handleSubmit}
+        className="icon"
+        icon={faMagnifyingGlass}
+      />
     </form>
   );
 };

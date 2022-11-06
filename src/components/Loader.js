@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <div className="error-page">
         <div>
-          <DotLoader size={50} color="#fff" />
+          <DotLoader size={50} color="deepskyblue" />
         </div>
     </div>
   )

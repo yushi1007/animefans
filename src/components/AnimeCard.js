@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import Loader from "./Loader";
 
 const AnimeCard = ({ animeList }) => {
   const checkAnimeInfo = () => {
@@ -24,7 +25,7 @@ const AnimeCard = ({ animeList }) => {
       );
     }
   };
-
+if(!animeList) return <Loader />
   return (
     <div className="card">
       <div className="card-img">
