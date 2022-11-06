@@ -10,9 +10,9 @@ const Genres = () => {
             {genres.map((genre, index) => {
                 return(
                 <div key={index} className="genres-text">
-                    <a href="#">
+                    <Link to={`/genre/${genre}`}>
                         <span>{genre}</span>
-                    </a>
+                    </Link>
                 </div>
                 )
 })}
