@@ -7,21 +7,26 @@ import GenresSection from "./GenreSection";
 const GenreAnime = () => {
   const { genre } = useParams();
   const [genreData, setGenreData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     const getGenre = (term) => {
-      fetchGenre(term).then((data) => setGenreData(data));
+      fetchGenre(term).then((data) => {
+        setGenreData(data);
+      })
     };
+    setIsLoading(false);
     getGenre(genre);
   }, [genre, genreData]);
-
+  
   return (
     <React.Fragment>
       <GenresSection />
       <div className="container">
         <div className="lists-box">
           <h1>{genre} Anime</h1>
-          <AnimeLists animeLists={genreData} />
+          <AnimeLists animeLists={genreData} isLoading={isLoading} />
         </div>
       </div>
     </React.Fragment>
