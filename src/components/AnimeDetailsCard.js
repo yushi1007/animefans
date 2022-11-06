@@ -17,8 +17,8 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
       return "/";
     }
   };
+  
   if (!animeDetails) return <Loader />;
-
   return (
     <div className="details-card">
       <div className="card-thumbnail">

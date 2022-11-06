@@ -76,10 +76,17 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.logo {
+.logo a{
+  display: flex;
+  align-items: center;
   color: #fff;
   font-size: x-large;
   font-weight: 700;
+}
+
+.logo img {
+  width: 80px;
+  transform: rotate(-45deg);
 }
 
 nav .menu {
@@ -137,11 +144,6 @@ nav .menu li a {
 nav .menu li a {
   display: inline-block;
   position: relative;
-  transition: 0.25s ease-out;
-}
-
-nav .menu li a:hover {
-  color: deepskyblue;
 }
 
 nav .menu li a::after {
@@ -152,7 +154,7 @@ nav .menu li a::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #e62429;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -198,7 +200,7 @@ nav .menu li a:hover::after {
 }
 
 .genres-text a:hover {
-  color: deepskyblue;
+  color: #e62429;;
 }
 
 /* ----------------------------------------------- */
@@ -225,7 +227,7 @@ nav .menu li a:hover::after {
   top: -6px;
   left: 0;
   height: 32px;
-  background: deepskyblue;
+  background: #e62429;
 }
 
 .card-box {
@@ -260,7 +262,7 @@ nav .menu li a:hover::after {
 
 .card a h3:hover,
 .card-img:hover ~ .card-title h3 {
-  color: deepskyblue;
+  color: #e62429;
 }
 
 /* .card-title + .card-img {
@@ -328,13 +330,13 @@ nav .menu li a:hover::after {
   border-width: 1.5px;
   border-style: solid;
   padding: 0px 3px 0px 3px;
-  border-color: deepskyblue;
+  border-color: #e62429;;
 }
 
 .card .card-details .episode {
   padding: 0px 3px 0px 3px;
   border-radius: 2px;
-  background-color: #0087ca;
+  background-color: #e62429;
 }
 
 /* ----------------------------------------------- */
@@ -359,7 +361,7 @@ nav .menu li a:hover::after {
   margin-top: 20px;
   background: transparent;
   cursor: pointer;
-  border: 2px solid deepskyblue;
+  border: 2px solid #e62429;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -481,7 +483,7 @@ nav .menu li a:hover::after {
   background: transparent;
   color: #ffffff;
   cursor: pointer;
-  border: 2px solid deepskyblue;
+  border: 2px solid #e62429;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -491,7 +493,7 @@ nav .menu li a:hover::after {
 }
 
 .watchnow-btn:hover {
-  background-color: deepskyblue;
+  background-color: #e62429;
 }
 
 .watchnow-btn span {
@@ -543,9 +545,9 @@ a.episode-link {
 }
 
 a.episode-link:hover {
-  color: deepskyblue;
+  color: #e62429;
 }
 
 a:is(:link, :active, :visited).active {
-  color: deepskyblue;
+  color: #e62429;
 }
