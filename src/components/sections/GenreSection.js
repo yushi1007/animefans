@@ -3,7 +3,7 @@ import GenresNavigation from "../GenresNavigation";
 
 const GenresSection = () => {
   return (
-    <div className="container">
+    <div className="container body">
       <GenresNavigation />
     </div>
   );
