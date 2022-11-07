@@ -13,7 +13,6 @@ function App() {
       <div className="App">
         <div className="background"></div>
         <Header />
-        {/* <GenreSection /> */}
         <Routes>
           <Route path="/" exact element={<AnimeSection />}/>
           <Route path="/watch/:id" exact element={<AnimeVideo />}/>

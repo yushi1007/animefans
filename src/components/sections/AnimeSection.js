@@ -6,6 +6,7 @@ import {
 } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import GenresSection from "./GenreSection";
+import HomeSection from "./HomeSection";
 
 const AnimeSection = () => {
   const [recentRelease, setRecentRelease] = useState([]);
@@ -32,6 +33,7 @@ const AnimeSection = () => {
 
   return (
     <React.Fragment>
+      <HomeSection />
       <GenresSection />
       <div className="container">
         <div className="lists-box">

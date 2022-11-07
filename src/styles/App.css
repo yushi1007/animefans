@@ -68,11 +68,17 @@ a {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav .container{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
@@ -167,6 +173,10 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 /* GENRES SECTION */
 /* ----------------------------------------------- */
+.body {
+  padding-top: 100px;
+}
+
 .genres-list {
   border: 1px solid transparent;
   margin: 20px 0 60px;
@@ -371,7 +381,7 @@ nav .menu li a:hover::after {
 
 .details-body {
   display: flex;
-  padding-top: 60px;
+  padding-top: 200px;
   justify-content: center;
 }
 
