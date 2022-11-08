@@ -33,8 +33,8 @@ const AnimeSection = () => {
 
   return (
     <React.Fragment>
-      <HomeSection />
-      <GenresSection />
+      {/* <HomeSection /> */}
+      {/* <GenresSection /> */}
       <div className="container">
         <div className="lists-box">
           <h1>Recent Released</h1>
