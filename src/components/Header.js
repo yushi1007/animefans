@@ -1,5 +1,6 @@
 import React from "react";
-import { navigationItems } from "../data/data";
+import { NavLink } from 'react-router-dom'
+import { navigationItems, genres } from "../data/data";
 import SearchBox from "./SearchBox";
 import logo from "../asset/img/animefans_logo.png";
 
@@ -22,6 +23,19 @@ const Header = () => {
               </li>
             );
           })}
+          <li className="genres-hover">
+            <a href="#">Genres</a>
+            <ul className="mega-menu">
+              {genres.map((genre, index) => {
+                return (
+                  <li key={index}>
+                     <NavLink to={`/genre/${genre}`}>{genre}</NavLink>
+                  </li>
+                )
+              })}
+            </ul>
+          </li>
+
         </ul>
         <SearchBox />
       </div>

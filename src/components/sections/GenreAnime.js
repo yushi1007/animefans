@@ -22,7 +22,7 @@ const GenreAnime = () => {
   
   return (
     <React.Fragment>
-      <GenresSection />
+      {/* <GenresSection /> */}
       <div className="container">
         <div className="lists-box">
           <h1>{genre} Anime</h1>
