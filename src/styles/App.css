@@ -103,7 +103,7 @@ nav .menu {
   color: #fff;
 }
 
-.menu .genres-hover .mega-menu {
+.menu .dropdown .mega-menu {
   width: 600px;
   display: none;
   list-style: none;
@@ -131,7 +131,7 @@ nav .menu {
   font-size: .95rem;
 }
 
-.menu .genres-hover:hover .mega-menu {
+.menu .dropdown.active .mega-menu {
   display: block;
 }
 

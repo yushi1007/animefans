@@ -1,10 +1,22 @@
-import React from "react";
-import { NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { navigationItems, genres } from "../data/data";
 import SearchBox from "./SearchBox";
 import logo from "../asset/img/animefans_logo.png";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const openDropDown = () => {
+    setOpen((open) => !open);
+  };
+
+  genres.sort(function (a, b) {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  });
+
   return (
     <nav>
       <div className="container">
@@ -23,19 +35,23 @@ const Header = () => {
               </li>
             );
           })}
-          <li className="genres-hover">
+          <li
+            onClick={openDropDown}
+            className={open ? "dropdown active" : "dropdown"}
+          >
             <a href="#">Genres</a>
             <ul className="mega-menu">
               {genres.map((genre, index) => {
                 return (
                   <li key={index}>
-                     <NavLink to={`/genre/${genre}`}>{genre}</NavLink>
+                    <NavLink to={`/genre/${genre}`}>
+                      {genre}
+                    </NavLink>
                   </li>
-                )
+                );
               })}
             </ul>
           </li>
-
         </ul>
         <SearchBox />
       </div>
