@@ -10,7 +10,7 @@ const HomeSection = () => {
   }, []);
 
   return (
-        <section className="main-slider">
+        <section className="container">
             <Home topAiring={topAiring} />
         </section>
   )

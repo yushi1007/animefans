@@ -7,8 +7,8 @@ const Home = ({ topAiring }) => {
 
   return (
     <>
-      <div className="main-slider-box">
-        {topAiring.map((topAiringItem, index)=> {
+      <div id="main-slider">
+        {topAiring.slice(0, 1).map((topAiringItem, index)=> {
           return(
             <HomeCard key={index} topAiringItem={topAiringItem} />
           )
