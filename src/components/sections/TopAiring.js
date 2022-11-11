@@ -7,21 +7,16 @@ const TopAiring = () => {
   const [topAiring, setTopAiring] = useState([]);
 
   useEffect(() => {
-    const getTopAiring = () => {
       fetchTopAiring().then((data) => setTopAiring(data));
-    };
-    getTopAiring();
   }, []);
+  
   return (
-    <React.Fragment>
-      <GenresSection />
-      <div className="container">
+    <div className="container">
         <div className="lists-box">
           <h1>Top Airing</h1>
           <AnimeLists animeLists={topAiring} />
         </div>
       </div>
-    </React.Fragment>
   );
 };
 

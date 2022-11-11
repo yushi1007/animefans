@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchGenre } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
+import Loader from "../Loader";
 import GenresSection from "./GenreSection";
 
 const GenreAnime = () => {
@@ -11,24 +12,30 @@ const GenreAnime = () => {
 
   useEffect(() => {
     setIsLoading(true);
+    setGenreData([]);
     const getGenre = (term) => {
       fetchGenre(term).then((data) => {
         setGenreData(data);
-      })
+        if (genreData) {
+          setIsLoading(false);
+        }
+      });
     };
-    setIsLoading(false);
     getGenre(genre);
-  }, [genre, genreData]);
-  
+  }, [genre]);
+
   return (
     <React.Fragment>
-      {/* <GenresSection /> */}
-      <div className="container">
-        <div className="lists-box">
-          <h1>{genre} Anime</h1>
-          <AnimeLists animeLists={genreData} isLoading={isLoading} />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="container">
+          <div className="lists-box">
+            <h1>{genre} Anime</h1>
+            <AnimeLists animeLists={genreData} isLoading={isLoading} />
+          </div>
         </div>
-      </div>
+      )}
     </React.Fragment>
   );
 };
