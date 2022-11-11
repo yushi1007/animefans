@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { fetchGenre } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import Loader from "../Loader";
-import GenresSection from "./GenreSection";
 
 const GenreAnime = () => {
   const { genre } = useParams();

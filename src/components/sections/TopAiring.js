@@ -1,22 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { fetchTopAiring } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
-import GenresSection from "./GenreSection";
+import Loader from "../Loader";
 
 const TopAiring = () => {
   const [topAiring, setTopAiring] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-      fetchTopAiring().then((data) => setTopAiring(data));
+    setIsLoading(true);
+    setTopAiring([]);
+    fetchTopAiring().then((data) => {
+      setTopAiring(data);
+      if (topAiring) {
+        setIsLoading(false);
+      }
+    });
   }, []);
-  
+
   return (
-    <div className="container">
-        <div className="lists-box">
-          <h1>Top Airing</h1>
-          <AnimeLists animeLists={topAiring} />
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="container">
+          <div className="lists-box">
+            <h1>Top Airing</h1>
+            <AnimeLists animeLists={topAiring} />
+          </div>
         </div>
-      </div>
+      )}
+    </>
   );
 };
 
