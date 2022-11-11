@@ -1,0 +1,12 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+position: static !important;
+transform: translate(0, 0);
+margin: 10px 0px 0px 20px !important;
+}
+

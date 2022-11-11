@@ -6,7 +6,6 @@ const HomeCard = ({
   topAiringItem: { animeId, animeImg, animeTitle, genres, latestEp },
 }) => {
   const latestEpisode = latestEp.replace("Episode", "");
-
   return (
     <div className="main-slider-box">
       <a href="#" className="main-slider-overlay">

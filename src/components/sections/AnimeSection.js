@@ -9,7 +9,6 @@ const AnimeSection = () => {
     <React.Fragment>
       <HomeSection />
       <RecentRelease />
-      <TopAiring />
       <Popular />
     </React.Fragment>
   );
