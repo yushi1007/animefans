@@ -1,9 +1,8 @@
-import React from "react";
 import AnimeCard from "./AnimeCard";
 import Loader from "./Loader";
+import { useEffect, useState } from "react";
 
 const AnimeLists = ({ animeLists, isLoading }) => {
-  if (isLoading) return <Loader />;
   return (
     <div className="card-box">
       {animeLists?.map((animeItem, index) => {
