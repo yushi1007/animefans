@@ -68,24 +68,22 @@ a {
   cursor: pointer;
 }
 
-.navbar-background {
-  background: black;
-  transition: top 0.6s;
-}
-
-.navbar--hidden {
-  top: -85px;
-}
-
-.navbar {
-  transition: top 0.6s;
-}
-
 nav {
+  top: 0;
+  left: 0;
+  transition: top 0.6s;
   position: fixed;
   width: 100%;
   z-index: 1;
   transition: top 0.6s;
+}
+
+.navbar-background {
+  background: black;
+}
+
+.navbar--hidden {
+  top: -85px;
 }
 
 nav .container {
