@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,9 +9,9 @@ const HomeCard = ({
   const latestEpisode = latestEp.replace("Episode", "");
   return (
     <div className="main-slider-box">
-      <a href="#" className="main-slider-overlay">
+      <Link to={`/anime-details/${animeId}`} className="main-slider-overlay">
         <FontAwesomeIcon className="icon" icon={faPlay} />
-      </a>
+      </Link>
       <div className="main-slider-img">
         <img src={animeImg} alt="poster" />
       </div>

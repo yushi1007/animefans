@@ -5,8 +5,22 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-position: static !important;
-transform: translate(0, 0);
-margin: 10px 0px 0px 20px !important;
+  position: static !important;
+  transform: translate(0, 0);
+  margin: 10px 0px 0px 20px !important;
 }
 
+.slider-btns {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1170px;
+  width: 100%;
+  margin: 10px auto 0px auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  font-weight: 800;
+  color: #ffffff;
+}
