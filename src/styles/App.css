@@ -68,14 +68,22 @@ a {
   cursor: pointer;
 }
 
-.navbar--hidden {
-  top: -75px;
-}
-
 nav {
+  top: 0;
+  left: 0;
+  transition: top 0.6s;
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: top 0.6s;
+}
+
+.navbar-background {
+  background: black;
+}
+
+.navbar--hidden {
+  top: -85px;
 }
 
 nav .container {
@@ -134,7 +142,7 @@ nav .menu {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .menu .dropdown.active .mega-menu {
@@ -254,11 +262,16 @@ nav .menu li a:hover::after {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(360deg, #161616b9 35%, rgba(73, 73, 73, 0.23) 64%);
+  background: linear-gradient(
+    360deg,
+    #161616b9 35%,
+    rgba(73, 73, 73, 0.23) 64%
+  );
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: flex-start;padding: 25px;
+  align-items: flex-start;
+  padding: 25px;
 }
 
 .main-slider-text .quality {
@@ -316,7 +329,7 @@ nav .menu li a:hover::after {
   width: 100%;
   height: 100%;
   left: 0px;
-  top:100%;
+  top: 100%;
   background-color: rgba(27, 27, 27, 0.6);
   display: flex;
   justify-content: center;
