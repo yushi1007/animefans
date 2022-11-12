@@ -5,6 +5,8 @@ import SearchBox from "./SearchBox";
 import logo from "../asset/img/animefans_logo.png";
 
 const Header = () => {
+  const [bg, setBg] = useState(false);
+  const [showBg, setShowBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [yOffset, setYOffset] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
@@ -13,6 +15,18 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleBg);
+    return () => window.removeEventListener("scroll", handleBg);
+  });
+
+  const handleBg = () => {
+    const background =
+      window.scrollY > 50 || showBg ? setBg(true) : setBg(false);
+
+    setShowBg(background);
+  };
 
   const handleScroll = () => {
     const currentYOffset = window.pageYOffset;
@@ -34,7 +48,11 @@ const Header = () => {
 
   return (
     <nav
-      id="navbar" className={visible ? "navbar" : "navbar--hidden"}
+      id="navbar"
+      className={`
+      ${visible ? "navbar" : "navbar--hidden"} 
+      ${bg ? "navbar-background" : ""}
+      `}
     >
       <div className="container">
         <div className="logo">
