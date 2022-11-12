@@ -65,11 +65,17 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar--hidden {
+  top: -75px;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 nav .container {
@@ -133,7 +139,7 @@ nav .menu {
 
 .menu .dropdown.active .mega-menu {
   display: block;
-  right: 8em;
+  right: 20em;
 }
 
 nav .menu li a {
