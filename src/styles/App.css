@@ -1,3 +1,4 @@
+@import "./mobile.css";
 /* ----------------------------------------------- */
 /* WHOLE PAGE SIZE */
 /* ----------------------------------------------- */
@@ -74,11 +75,11 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1;
-  transition: top 0.6s;
+  transition: all 0.6s;
 }
 
 .navbar-background {
-  background: black;
+  background-color: black;
 }
 
 .navbar--hidden {
