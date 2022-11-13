@@ -26,15 +26,12 @@ const SearchAnime = () => {
           <ErrorMessage />
         </div>
       ) : (
-        <React.Fragment>
-          <GenresSection />
           <div className="container">
             <div className="lists-box">
               <h1>Search result for "{searchTerm}"</h1>
               <AnimeLists animeLists={searchedAnime} />
             </div>
           </div>
-        </React.Fragment>
       )}
     </React.Fragment>
   );
