@@ -48,7 +48,6 @@ const Header = () => {
 
   return (
     <nav
-      id="navbar"
       className={`
       ${visible ? "navbar" : "navbar--hidden"} 
       ${bg ? "navbar-background" : ""}
