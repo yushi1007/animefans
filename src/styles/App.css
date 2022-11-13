@@ -1,4 +1,5 @@
 @import "./mobile.css";
+@import "./swiper.css";
 /* ----------------------------------------------- */
 /* WHOLE PAGE SIZE */
 /* ----------------------------------------------- */
@@ -122,7 +123,7 @@ nav .menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #252525;
+  background: #000000;
   position: absolute;
   top: 100%;
   padding: 10px;
@@ -146,7 +147,7 @@ nav .menu {
 
 .menu .dropdown.active .mega-menu {
   display: block;
-  right: 20em;
+  right: 35em;
 }
 
 nav .menu li a {
@@ -157,7 +158,6 @@ nav .menu li a {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
-  /* color: #fff; */
   letter-spacing: 1px;
 }
 
