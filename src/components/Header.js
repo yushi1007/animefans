@@ -60,6 +60,10 @@ const Header = () => {
             Anime<span style={{ color: "#e62429" }}>Fans</span>
           </a>
         </div>
+        <input type="checkbox" className="menu-btn" id="menu-btn" />
+        <label className="menu-icon" for="menu-btn">
+          <span className="nav-icon"></span>
+        </label>
         <ul className="menu">
           {navigationItems.map((navigationItem, index) => {
             const { name, href } = navigationItem;
@@ -74,7 +78,7 @@ const Header = () => {
             className={open ? "dropdown active" : "dropdown"}
           >
             <a>Genres</a>
-            <ul className="mega-menu">
+            <ul className={`mega-menu ${visible ? "" : "mega-menu-hidden"}`}>
               {genres.map((genre, index) => {
                 return (
                   <li key={index}>

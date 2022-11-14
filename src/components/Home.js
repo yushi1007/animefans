@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HomeCard from "./HomeCard";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay } from "swiper";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 
