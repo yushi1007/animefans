@@ -34,6 +34,7 @@ const Header = () => {
 
     setYOffset(currentYOffset);
     setVisible(visible);
+    setOpen(false);
   };
 
   const openDropDown = () => {
@@ -78,7 +79,7 @@ const Header = () => {
             className={open ? "dropdown active" : "dropdown"}
           >
             <a>Genres</a>
-            <ul className={`mega-menu ${visible ? "" : "mega-menu-hidden"}`}>
+            <ul className="mega-menu">
               {genres.map((genre, index) => {
                 return (
                   <li key={index}>
