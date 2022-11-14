@@ -32,32 +32,6 @@
   padding-right: 1.5rem;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -94,6 +68,10 @@ nav .container {
   width: 100%;
   height: 70px;
   border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+nav .container .menu-btn {
+  display: none;
 }
 
 .logo a {
@@ -147,6 +125,11 @@ nav .menu {
 
 .menu .dropdown.active .mega-menu {
   display: block;
+  right: 35em;
+}
+
+.menu .dropdown.active .mega-menu-hidden {
+  top: -500px;
   right: 35em;
 }
 
