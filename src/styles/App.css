@@ -603,6 +603,26 @@ nav .menu li a:hover::after {
   display: flex;
 }
 
+.lists-box.movies-box {
+  padding-top: 150px !important;
+}
+
+.lists-box.popular-box {
+  padding-top: 150px;
+}
+
+.lists-box.topairing-box {
+  padding-top: 150px;
+}
+
+.lists-box.search-anime-box {
+  padding-top: 150px;
+}
+
+.lists-box.genre-anime-box {
+  padding-top: 150px;
+}
+
 .anime-genre {
   padding: 0px 20px;
   border-left: 1px solid #fff;

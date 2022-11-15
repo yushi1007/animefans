@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { fetchGenre } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import Loader from "../Loader";
 
 const GenreAnime = () => {
+  const location = useLocation();
   const { genre } = useParams();
   const [genreData, setGenreData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -22,14 +23,14 @@ const GenreAnime = () => {
     };
     getGenre(genre);
   }, [genre]);
-
+  console.log(location)
   return (
     <React.Fragment>
       {isLoading ? (
         <Loader />
       ) : (
         <div className="container">
-          <div className="lists-box">
+          <div className={location.pathname.includes("/genre") ? "lists-box genre-anime-box" : "lists-box"}>
             <h1>{genre} Anime</h1>
             <AnimeLists animeLists={genreData} isLoading={isLoading} />
           </div>

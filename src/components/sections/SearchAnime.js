@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import GenresSection from "./GenreSection";
+import { useParams, useLocation } from "react-router-dom";
 import { fetchSearchTerm } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import ErrorMessage from "../ErrorMessage";
 
 const SearchAnime = () => {
+  const location = useLocation();
   const { searchTerm } = useParams();
   const [searchedAnime, setSearchedAnime] = useState([]);
 
@@ -27,7 +27,7 @@ const SearchAnime = () => {
         </div>
       ) : (
           <div className="container">
-            <div className="lists-box">
+            <div className={location.pathname.includes("/search") ? "lists-box search-anime-box" : "lists-box"}>
               <h1>Search result for "{searchTerm}"</h1>
               <AnimeLists animeLists={searchedAnime} />
             </div>
