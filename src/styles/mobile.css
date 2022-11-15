@@ -139,6 +139,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .container .lists-box h1 {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 1000px) {
