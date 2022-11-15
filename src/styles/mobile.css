@@ -68,7 +68,7 @@
     border: 1px solid rgba(255, 255, 255, 0.03);
   }
 
-  nav .container .menu-icon {
+  nav .container .hamburger {
     cursor: pointer;
     float: right;
     padding: 28px 20px;
@@ -77,7 +77,7 @@
     display: block;
   }
 
-  nav .container .menu-icon .nav-icon {
+  nav .container .hamburger .line {
     display: block;
     position: relative;
     width: 18px;
@@ -86,8 +86,8 @@
     transition: background 0.2 ease-out;
   }
 
-  nav .container .menu-icon .nav-icon::before,
-  nav .container .menu-icon .nav-icon::after {
+  nav .container .hamburger .line::before,
+  nav .container .hamburger .line::after {
     content: "";
     display: block;
     position: absolute;
@@ -97,29 +97,29 @@
     transition: all 0.2 ease-out;
   }
 
-  nav .container .menu-icon .nav-icon::before {
+  nav .container .hamburger .line::before {
     top: 5px;
   }
 
-  nav .container .menu-icon .nav-icon::after {
+  nav .container .hamburger .line::after {
     top: -5px;
   }
 
-  nav .menu-btn:checked ~ .menu-icon .nav-icon {
+  nav .hamburger.active .line {
     background: transparent;
   }
 
-  nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  nav .hamburger.active .line:before {
     transform: rotate(-45deg);
     top: 0;
   }
 
-  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  nav .hamburger.active .line:after {
     transform: rotate(45deg);
     top: 0;
   }
 
-  nav .menu-btn:checked ~ .menu {
+  nav .hamburger.active ~ .menu {
     display: block;
   }
 
