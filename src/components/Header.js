@@ -8,6 +8,7 @@ const Header = () => {
   const [bg, setBg] = useState(false);
   const [showBg, setShowBg] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openNavbar, setOpenNavbar] = useState(false);
   const [yOffset, setYOffset] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
 
@@ -35,6 +36,11 @@ const Header = () => {
     setYOffset(currentYOffset);
     setVisible(visible);
     setOpen(false);
+    setOpenNavbar(false);
+  };
+
+  const handleNavbarClick = () => {
+    setOpenNavbar((openNavbar) => !openNavbar);
   };
 
   const openDropDown = () => {
@@ -61,10 +67,12 @@ const Header = () => {
             Anime<span style={{ color: "#e62429" }}>Fans</span>
           </a>
         </div>
-        <input type="checkbox" className="menu-btn" id="menu-btn" />
-        <label className="menu-icon" for="menu-btn">
-          <span className="nav-icon"></span>
-        </label>
+        <div
+          className={openNavbar ? "hamburger active" : "hamburger"}
+          onClick={handleNavbarClick}
+        >
+          <li className="line"></li>
+        </div>
         <ul className="menu">
           {navigationItems.map((navigationItem, index) => {
             const { name, href } = navigationItem;
