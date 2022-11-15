@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { fetchPopular } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import Loader from "../Loader";
 
 const Popular = () => {
+  const location = useLocation();
+
   const [popular, setPopular] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -24,7 +27,7 @@ const Popular = () => {
         <Loader />
       ) : (
         <div className="container">
-          <div className="lists-box">
+          <div className={location.pathname === "/popular" ? "lists-box popular-box" : "lists-box"}>
             <h1>Popular</h1>
             <AnimeLists animeLists={popular} />
           </div>

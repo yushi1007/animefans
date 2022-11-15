@@ -20,6 +20,7 @@
   .container {
     max-width: 1280px;
   }
+  
 }
 
 @media (min-width: 1536px) {
@@ -132,5 +133,22 @@
   .menu .dropdown .mega-menu li {
     float: left;
     width: 30%;
+  }
+
+  .container .lists-box .card-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .container .lists-box .card-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container .lists-box .card-box {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

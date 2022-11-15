@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { fetchTopAiring } from "../../data/fetchAnimeApi";
 import AnimeLists from "../AnimeLists";
 import Loader from "../Loader";
 
 const TopAiring = () => {
+  const location = useLocation();
   const [topAiring, setTopAiring] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -24,7 +26,7 @@ const TopAiring = () => {
         <Loader />
       ) : (
         <div className="container">
-          <div className="lists-box">
+          <div className={location.pathname === "/topairing" ? "lists-box topairing-box" : "lists-box"}>
             <h1>Top Airing</h1>
             <AnimeLists animeLists={topAiring} />
           </div>
