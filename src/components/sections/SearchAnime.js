@@ -27,7 +27,7 @@ const SearchAnime = () => {
         </div>
       ) : (
           <div className="container">
-            <div className={location.pathname.includes("/search") ? "lists-box search-box" : "lists-box"}>
+            <div className={location.pathname.includes("/search") ? "lists-box search-anime-box" : "lists-box"}>
               <h1>Search result for "{searchTerm}"</h1>
               <AnimeLists animeLists={searchedAnime} />
             </div>

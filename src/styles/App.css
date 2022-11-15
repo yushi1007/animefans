@@ -615,6 +615,10 @@ nav .menu li a:hover::after {
   padding-top: 150px;
 }
 
+.lists-box.search-anime-box {
+  padding-top: 150px;
+}
+
 .lists-box.genre-anime-box {
   padding-top: 150px;
 }
