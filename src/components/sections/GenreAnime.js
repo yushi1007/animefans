@@ -23,7 +23,7 @@ const GenreAnime = () => {
     };
     getGenre(genre);
   }, [genre]);
-  console.log(location)
+
   return (
     <React.Fragment>
       {isLoading ? (
