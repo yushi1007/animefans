@@ -630,6 +630,15 @@ nav .menu li a:hover::after {
   border-right: 1px solid #fff;
 }
 
+.anime-genre a {
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.anime-genre a:hover {
+  color: #e62429;
+}
+
 .anime-genre:first-child {
   padding-right: 20px;
   border-left: 0px !important;
