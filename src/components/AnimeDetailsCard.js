@@ -24,6 +24,14 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
     setReadMore((readMore) => !readMore)
   }
   
+  const synopsisLength = () => {
+    if(animeDetails?.synopsis.length < 575){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   if (!animeDetails) return <Loader />;
   return (
     <div className="details-card">
@@ -36,7 +44,7 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
         <div className="genre-box">{genreItems}</div>
         <p className="card-description">
           {readMore ? animeDetails?.synopsis : animeDetails?.synopsis.substring(0, 575)}
-        <button className="read-more-btn" onClick={toggleReadMore}>{readMore ? "Read Less" : "...Read More"}</button>
+        {synopsisLength() ? '' : <button className="read-more-btn" onClick={toggleReadMore}>{readMore ? "Read Less" : "...Read More"}</button>}
         </p>
         <div className="anime-details-widget">
           <div className="row">
