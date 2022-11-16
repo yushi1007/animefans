@@ -554,7 +554,6 @@ nav .menu li a:hover::after {
   width: 1536px;
   height: 700px;
   display: flex;
-  overflow: hidden;
 }
 
 .card-thumbnail {
@@ -699,6 +698,21 @@ nav .menu li a:hover::after {
   font-size: 18pt;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.read-more-btn {
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color:#e62429;
+  transition: all 0.2s ease-in-out;
+}
+
+.read-more-btn:hover {
+  color:#bb0006;
 }
 
 /* ----------------------------------------------- */
