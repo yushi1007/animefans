@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AnimeGenreCard from "./AnimeGenreCard";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,8 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import Loader from "./Loader";
 
 const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
+  const [readMore, setReadMore] = useState(false);
+
   const genreItems = animeDetails?.genres?.map((genre, index) => {
     return <AnimeGenreCard key={index} genre={genre} />;
   });
@@ -17,6 +19,10 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
       return "/";
     }
   };
+
+  const toggleReadMore = () => {
+    setReadMore((readMore) => !readMore)
+  }
   
   if (!animeDetails) return <Loader />;
   return (
@@ -28,7 +34,10 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
         <span className="anime-title">{animeDetails?.animeTitle}</span>
         <span className="anime-title-two">{animeDetails?.otherNames}</span>
         <div className="genre-box">{genreItems}</div>
-        <p className="card-description">{animeDetails?.synopsis}</p>
+        <p className="card-description">
+          {readMore ? animeDetails?.synopsis : animeDetails?.synopsis.substring(0, 575)}
+        <button className="read-more-btn" onClick={toggleReadMore}>{readMore ? "Read Less" : "...Read More"}</button>
+        </p>
         <div className="anime-details-widget">
           <div className="row">
             <div className="row-item">
