@@ -717,6 +717,11 @@ nav .menu li a:hover::after {
   color:#bb0006;
 } 
 
+.ep-box{
+  padding-bottom: 0px !important;
+  padding-top: 30px !important;
+}
+
 @media (min-width: 992px) {
   .card-thumbnail {
     -ms-flex: 0 0 25%;

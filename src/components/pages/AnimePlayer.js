@@ -5,8 +5,8 @@ import {
   fetchStreamingUrls,
   fetchAnimeDetails,
 } from "../../data/fetchAnimeApi";
-import AnimePlayerDetails from "../AnimePlayerDetails";
 import Loader from "../Loader";
+import EpisodeList from "../EpisodeList";
 
 const AnimeVideo = () => {
   const { id } = useParams();
@@ -32,7 +32,7 @@ const AnimeVideo = () => {
   return (
     <div className="container body">
       <AnimePlayerCard video={video} />
-      <AnimePlayerDetails animeDetails={animeDetails} />
+      <EpisodeList animeDetails={animeDetails} />
     </div>
   );
 };
