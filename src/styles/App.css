@@ -154,6 +154,7 @@ nav .menu li a {
 .search input {
   width: 100%;
   height: 30px;
+  color: #fff;
   border: none;
   outline: none;
   background: transparent;
@@ -545,83 +546,77 @@ nav .menu li a:hover::after {
 }
 
 .details-body {
-  display: flex;
-  padding-top: 200px;
-  justify-content: center;
+  padding-top: 150px;
+}
+
+.details-card-box {
+  margin-bottom: 65px;
 }
 
 .details-card {
-  height: 700px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .card-thumbnail {
   position: relative;
-  width: 350px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.card-thumbnail img {
-  position: absolute;
+.anime-detail-img {
+  height: 495px;
   width: 100%;
+  position: relative;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 }
 
 .card-body {
-  width: 800px;
-  padding: 2rem;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: flex-start;
-  font-size: 15px;
-  color: #e8e8e8;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card-body-text {
+  position: relative;
 }
 
 .anime-title {
-  color: #e8e8e8;
-  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.anime-title-two {
-  margin-top: -20px;
+.anime-title h3 {
+  color: #e8e8e8;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.anime-title span {
   font-size: 18px;
   color: #b7b7b7;
   display: block;
 }
 
-.card-description {
-  color: #b7b7b7;
-  font-size: 15px;
-  line-height: 30px;
-}
-
 .genre-box {
   display: flex;
-}
-
-.lists-box.movies-box {
-  padding-top: 150px !important;
-}
-
-.lists-box.popular-box {
-  padding-top: 150px;
-}
-
-.lists-box.topairing-box {
-  padding-top: 150px;
-}
-
-.lists-box.search-anime-box {
-  padding-top: 150px;
-}
-
-.lists-box.genre-anime-box {
-  padding-top: 150px;
+  margin-bottom: 20px;
 }
 
 .anime-genre {
   padding: 0px 5px;
+  font-size: 15px;
 }
 
 .anime-genre a {
@@ -634,11 +629,26 @@ nav .menu li a:hover::after {
 }
 
 .anime-genre:first-child {
-padding-left: 0px !important;
+  padding-left: 0px !important;
 }
 
 .anime-genre:last-child {
-padding-right: 0px !important;
+  padding-right: 0px !important;
+}
+
+.card-description {
+  color: #b7b7b7;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.anime-details-widget {
+  margin-bottom: 20px;
+}
+
+.anime-details-widget ul{
+  margin-bottom: 20px;
 }
 
 .row {
@@ -646,15 +656,8 @@ padding-right: 0px !important;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -18px;
-}
-
-.row-item {
-  padding-right: 5rem;
-}
-
-.anime-details-widget ul {
-  margin-bottom: 20px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .anime-details-widget ul li {
@@ -712,6 +715,56 @@ padding-right: 0px !important;
 
 .read-more-btn:hover {
   color:#bb0006;
+} 
+
+@media (min-width: 992px) {
+  .card-thumbnail {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .row-item-lg {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-item-md {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.lists-box.movies-box {
+  padding-top: 150px !important;
+}
+
+.lists-box.popular-box {
+  padding-top: 150px;
+}
+
+.lists-box.topairing-box {
+  padding-top: 150px;
+}
+
+.lists-box.search-anime-box {
+  padding-top: 150px;
+}
+
+.lists-box.genre-anime-box {
+  padding-top: 150px;
 }
 
 /* ----------------------------------------------- */
