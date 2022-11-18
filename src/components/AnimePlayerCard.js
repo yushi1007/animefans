@@ -1,7 +1,9 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import Loader from "./Loader";
 
 const AnimePlayer = ({ video }) => {
+  if(!video) return <Loader />
   return (
     <div className="player-wrapper">
       <ReactPlayer

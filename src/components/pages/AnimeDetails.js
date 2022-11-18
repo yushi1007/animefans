@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchAnimeDetails } from "../../data/fetchAnimeApi";
 import AnimeDetailsCard from "../AnimeDetailsCard";
+import EpisodeList from "../EpisodeList";
 import ErrorMessage from "../ErrorMessage";
 
 const AnimeDetails = () => {
@@ -44,6 +45,7 @@ const AnimeDetails = () => {
             animeDetails={animeDetails}
             handleStatus={handleStatus()}
           />
+          <EpisodeList animeDetails={animeDetails} />
         </div>
       )}
     </React.Fragment>

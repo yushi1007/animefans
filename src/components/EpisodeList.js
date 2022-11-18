@@ -1,7 +1,7 @@
 import React from "react";
 import EpisodeCard from "./EpisodeCard";
 
-const AnimePlayerDetails = ({ animeDetails }) => {
+const EpisodeList = ({ animeDetails }) => {
   const sortEpisodes = animeDetails?.episodesList?.sort(
     (a, b) => a.episodeNum - b.episodeNum
   );
@@ -12,11 +12,11 @@ const AnimePlayerDetails = ({ animeDetails }) => {
   });
 
   return (
-    <div className="lists-box">
+    <div className="lists-box ep-box">
       <h1>Episodes</h1>
       <div className="episodes-box">{episodeItems}</div>
     </div>
   );
 };
 
-export default AnimePlayerDetails;
+export default EpisodeList;
