@@ -115,6 +115,10 @@
   .container .lists-box .card-box .card .card-img {
     height: 270px;
   }
+
+  .container .card-body {
+    width: 700px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -124,6 +128,10 @@
   
   .container .lists-box .card-box .card .card-img {
     height: 240px;
+  }
+
+  .container .card-body {
+    width: 500px;
   }
 }
 
