@@ -1,6 +1,4 @@
 import AnimeCard from "./AnimeCard";
-import Loader from "./Loader";
-import { useEffect, useState } from "react";
 
 const AnimeLists = ({ animeLists, isLoading }) => {
   return (
