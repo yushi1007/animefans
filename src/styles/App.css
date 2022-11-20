@@ -13,17 +13,6 @@
   box-sizing: border-box;
 }
 
-.App .background {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
-    url("../asset/img/background.jpg");
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .container {
   width: 100%;
   margin-left: auto;
@@ -54,7 +43,7 @@ nav {
 }
 
 .navbar-background {
-  background-color: black;
+  background-color: #17171f;
 }
 
 .navbar--hidden {
@@ -409,7 +398,7 @@ nav .menu li a:hover::after {
   margin-left: auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   gap: 1rem;
   border: 1px solid transparent;
   margin-top: 2rem;
@@ -443,7 +432,7 @@ nav .menu li a:hover::after {
 
 .card .card-img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   margin-bottom: 10px;
   -webkit-box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
   box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);

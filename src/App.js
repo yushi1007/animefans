@@ -11,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className="background"></div>
         <Header />
         <Routes>
           <Route path="/" exact element={<AnimeSection />}/>

@@ -63,7 +63,7 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} width="40" height="40" alt="logo" />
             Anime<span style={{ color: "#e62429" }}>Fans</span>
           </a>
         </div>
