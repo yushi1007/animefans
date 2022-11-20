@@ -7,7 +7,6 @@ const EpisodeList = ({ animeDetails }) => {
   );
 
   const episodeItems = sortEpisodes?.map((episode) => {
-    console.log(episode);
     return <EpisodeCard key={episode?.episodeId} episode={episode} />;
   });
 
