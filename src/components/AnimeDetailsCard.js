@@ -37,10 +37,9 @@ const AnimeDetailsCard = ({ animeDetails, handleStatus }) => {
     <div className="details-card-box">
       <div className="details-card">
         <div className="card-thumbnail">
-          <img
+          <div
             className="anime-detail-img set-bg"
-            src={animeDetails?.animeImg}
-            alt={animeDetails?.animeTitle}
+            style={{ backgroundImage: `url(${animeDetails?.animeImg})` }}
           />
         </div>
         <div className="card-body">

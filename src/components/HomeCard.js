@@ -12,8 +12,7 @@ const HomeCard = ({
       <Link to={`/anime-details/${animeId}`} className="main-slider-overlay">
         <FontAwesomeIcon className="icon" icon={faPlay} />
       </Link>
-      <div className="main-slider-img">
-        <img src={animeImg} alt="poster" />
+      <div className="main-slider-img" style={{ backgroundImage: `url(${animeImg})` }}>
       </div>
       <div className="main-slider-text">
         <span className="quality">Ep {latestEpisode}</span>
