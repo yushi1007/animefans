@@ -34,14 +34,15 @@ const AnimeCard = ({ animeList }) => {
           style={{ backgroundImage: `url(${animeList.animeImg})` }}
         ></div>
       </Link>
-      <div className="card-title">
-        <Link
-          to={`/anime-details/${animeList.animeId}`}
-          title={animeList.animeTitle}
-        >
+      <Link
+        className="card-title-link"
+        to={`/anime-details/${animeList.animeId}`}
+        title={animeList.animeTitle}
+      >
+        <div className="card-title">
           <h3>{animeList.animeTitle}</h3>
-        </Link>
-      </div>
+        </div>
+      </Link>
       {checkAnimeInfo()}
     </div>
   );
