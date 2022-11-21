@@ -221,13 +221,8 @@ nav .menu li a:hover::after {
 .main-slider-img {
   width: 100%;
   height: 100%;
-}
-
-.main-slider-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-slider-text {
@@ -408,7 +403,7 @@ nav .menu li a:hover::after {
   margin-bottom: 20px;
 }
 
-.card-img ~ .card-title h3 {
+.card-link ~ .card-title h3 {
   font-weight: 500;
   font-size: 0.9rem;
   margin-bottom: 5px;
@@ -426,13 +421,15 @@ nav .menu li a:hover::after {
 }
 
 .card a h3:hover,
-.card-img:hover ~ .card-title h3 {
+.card-link:hover ~ .card-title h3 {
   color: #e62429;
 }
 
 .card .card-img {
   width: 100%;
   height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
   -webkit-box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
   box-shadow: 0 7px 17px -8px rgba(255, 255, 255, 0.4);
@@ -443,12 +440,6 @@ nav .menu li a:hover::after {
 .card .card-img:hover {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
-}
-
-.card .card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .card .recent-release {

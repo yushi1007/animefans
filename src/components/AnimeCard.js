@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import Loader from "./Loader";
 
 const AnimeCard = ({ animeList }) => {
@@ -25,16 +25,20 @@ const AnimeCard = ({ animeList }) => {
       );
     }
   };
-if(!animeList) return <Loader />
+  if (!animeList) return <Loader />;
   return (
     <div className="card">
-      <div className="card-img">
-        <Link to={`/anime-details/${animeList.animeId}`}>
-          <img src={animeList.animeImg} alt={animeList.animeTitle} />
-        </Link>
-      </div>
+      <Link className="card-link" to={`/anime-details/${animeList.animeId}`}>
+        <div
+          className="card-img"
+          style={{ backgroundImage: `url(${animeList.animeImg})` }}
+        ></div>
+      </Link>
       <div className="card-title">
-        <Link to={`/anime-details/${animeList.animeId}`} title={animeList.animeTitle}>
+        <Link
+          to={`/anime-details/${animeList.animeId}`}
+          title={animeList.animeTitle}
+        >
           <h3>{animeList.animeTitle}</h3>
         </Link>
       </div>
