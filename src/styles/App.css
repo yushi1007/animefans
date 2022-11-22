@@ -425,21 +425,6 @@ nav .menu li a:hover::after {
   color: #e62429;
 }
 
-/* .card .card-title-link ~ .card-link .card-img{
-    -webkit-transition: all .1s ease-out;
-    transition: all .2s ease;
-}
-.card .card-title-link:hover ~ .card-link .card-img {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-} */
-
-
-.card a:nth-child(2):hover ~ :nth-child(1) {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-
 .card .card-img {
   width: 100%;
   height: 200px;
