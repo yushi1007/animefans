@@ -45,7 +45,7 @@ const AnimeDetails = () => {
             animeDetails={animeDetails}
             handleStatus={handleStatus()}
           />
-          <EpisodeList animeDetails={animeDetails} />
+          <EpisodeList animeDetails={animeDetails} handleStatus={handleStatus()} />
         </div>
       )}
     </React.Fragment>

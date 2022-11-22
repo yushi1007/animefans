@@ -43,7 +43,7 @@ nav {
 }
 
 .navbar-background {
-  background-color: #1c1c1c;
+  background-color: #23252b;
 }
 
 .navbar--hidden {
@@ -68,7 +68,7 @@ nav .container {
 }
 
 .logo img {
-  width: 40px;
+  width: 35px;
   transform: rotate(-45deg);
 }
 
@@ -86,11 +86,10 @@ nav .menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #1c1c1c;
+  background-color: #23252b;
   position: absolute;
   top: 100%;
   padding: 10px;
-  border-radius: 0.3rem;
   transition: 1.2s;
 }
 
@@ -661,6 +660,7 @@ nav .menu li a:hover::after {
 }
 
 .coming-soon {
+  color: #ffffff;
   font-size: 18pt;
   font-weight: 600;
   letter-spacing: 1px;
@@ -683,7 +683,7 @@ nav .menu li a:hover::after {
 
 .ep-box{
   padding-bottom: 0px !important;
-  padding-top: 30px !important;
+  padding-top: 0px !important;
 }
 
 @media (min-width: 992px) {
