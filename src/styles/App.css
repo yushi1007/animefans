@@ -43,7 +43,7 @@ nav {
 }
 
 .navbar-background {
-  background-color: rgb(25,25,25);;
+  background-color: #1c1c1c;
 }
 
 .navbar--hidden {
@@ -86,7 +86,7 @@ nav .menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #1c1c1c;
   position: absolute;
   top: 100%;
   padding: 10px;
