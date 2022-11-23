@@ -561,7 +561,7 @@ nav .menu li a:hover::after {
 
 .anime-title h3 {
   color: #e8e8e8;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 13px;
 }
@@ -610,7 +610,7 @@ nav .menu li a:hover::after {
   margin-bottom: 20px;
 }
 
-.anime-details-widget ul{
+.anime-details-widget ul {
   margin-bottom: 20px;
 }
 
@@ -673,15 +673,15 @@ nav .menu li a:hover::after {
   border: none;
   font-size: 16px;
   font-weight: 700;
-  color:#e62429;
+  color: #e62429;
   transition: all 0.2s ease-in-out;
 }
 
 .read-more-btn:hover {
-  color:#bb0006;
-} 
+  color: #bb0006;
+}
 
-.ep-box{
+.ep-box {
   padding-bottom: 0px !important;
   padding-top: 0px !important;
 }
@@ -741,8 +741,23 @@ nav .menu li a:hover::after {
 /* ----------------------------------------------- */
 .player-wrapper {
   position: relative;
-  padding-top: 5%;
+  padding-top: 10px;
   margin-bottom: 60px;
+}
+
+.react-player {
+  width: 100%;
+  height: 100%;
+}
+
+.player {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.player-details {
+  right: 0;
+  top: 30px;
 }
 
 .episodes-box {

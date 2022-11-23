@@ -31,7 +31,7 @@ const AnimeVideo = () => {
   if(!video && !animeDetails) return <Loader />
   return (
     <div className="container body">
-      <AnimePlayerCard video={video} />
+      <AnimePlayerCard video={video} animeDetails={animeDetails} />
       <EpisodeList animeDetails={animeDetails} />
     </div>
   );
