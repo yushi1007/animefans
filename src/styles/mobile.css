@@ -1,6 +1,6 @@
 @media screen and (max-width: 1100px) {
   .navbar {
-    background-color: #000000;
+    background-color: #23252b;
   }
   
   nav .container {
@@ -14,7 +14,7 @@
     position: absolute;
     top: 65px;
     left: 0px;
-    background: #000000;
+    background-color: #23252b;
     border: 1px solid rgba(0, 0, 0, 0.04);
     width: 100%;
     padding: 20px 0px;
