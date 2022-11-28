@@ -5,12 +5,13 @@ const hostUrl = "gogoanime2.p.rapidapi.com";
 
 const options = {
   url: animeUrl,
+  params: {page: "1"},
   headers: {
     "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
     "X-RapidAPI-Host": hostUrl,
   },
 };
-
+console.log(options)
 export const fetchRecentRelease = async () => {
   const { data } = await axios.get(`${animeUrl}/recent-release`, options);
   return data;
