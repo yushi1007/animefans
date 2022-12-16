@@ -10,7 +10,7 @@
 The open-source anime streaming service made with ReactJS. User can search and watch the anime without ad.
 </p>
 
-![demo](https://user-images.githubusercontent.com/75753187/204114924-6524f443-c6fc-4bd9-93b2-3d27bb2364ab.png)
+![demo](https://user-images.githubusercontent.com/75753187/208209469-11bca98e-eca1-414f-9713-a78d32c59cc9.png)
 
 ## Acknowledgements
 
