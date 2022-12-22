@@ -11,7 +11,7 @@ const options = {
     "X-RapidAPI-Host": hostUrl,
   },
 };
-console.log(options)
+
 export const fetchRecentRelease = async () => {
   const { data } = await axios.get(`${animeUrl}/recent-release`, options);
   return data;
