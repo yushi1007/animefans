@@ -718,6 +718,10 @@ nav .menu li a:hover::after {
   }
 }
 
+.recent-release-box {
+  padding-top: 150px !important;
+}
+
 .lists-box.movies-box {
   padding-top: 150px !important;
 }

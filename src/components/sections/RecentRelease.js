@@ -24,7 +24,7 @@ const RecentRelease = () => {
         <Loader />
       ) : (
         <div className="container">
-          <div className="lists-box">
+          <div className="lists-box recent-release-box">
             <h1>Recent Released</h1>
             <AnimeLists animeLists={recentRelease} />
           </div>
