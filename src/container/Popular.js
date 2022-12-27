@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { fetchPopular } from "../../data/fetchAnimeApi";
-import AnimeLists from "../AnimeLists";
-import Loader from "../Loader";
+import { fetchPopular } from "../data/fetchAnimeApi";
+import AnimeLists from "../components/AnimeLists";
+import Loader from "../components/Loader";
 
 const Popular = () => {
   const location = useLocation();

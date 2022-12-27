@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { fetchSearchTerm } from "../../data/fetchAnimeApi";
-import AnimeLists from "../AnimeLists";
-import ErrorMessage from "../ErrorMessage";
-import Loader from "../Loader";
+import { fetchSearchTerm } from "../data/fetchAnimeApi";
+import AnimeLists from "../components/AnimeLists";
+import ErrorMessage from "../components/ErrorMessage";
+import Loader from "../components/Loader";
 
 const SearchAnime = () => {
   const location = useLocation();

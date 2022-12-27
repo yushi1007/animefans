@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { fetchGenre } from "../../data/fetchAnimeApi";
-import AnimeLists from "../AnimeLists";
-import Loader from "../Loader";
-
+import { fetchGenre } from "../data/fetchAnimeApi";
+import AnimeLists from "../components/AnimeLists";
+import Loader from "../components/Loader"
 const GenreAnime = () => {
   const location = useLocation();
   const { genre } = useParams();

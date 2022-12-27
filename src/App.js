@@ -9,10 +9,10 @@ import {
   TopAiring,
   Header,
   Footer,
-} from "./components/sections";
-import AnimeDetails from "./components/pages/AnimeDetails";
-import AnimeVideo from "./components/pages/AnimePlayer";
-import SearchAnime from "./components/sections/SearchAnime";
+} from "./container";
+import AnimeDetails from "./pages/AnimeDetails";
+import AnimeVideo from "./pages/AnimePlayer";
+import SearchAnime from "./container/SearchAnime";
 
 function App() {
   return (

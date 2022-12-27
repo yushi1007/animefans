@@ -1,5 +1,5 @@
 import React from "react";
-import GenresNavigation from "../GenresNavigation";
+import GenresNavigation from "../components/GenresNavigation";
 
 const GenresSection = () => {
   return (

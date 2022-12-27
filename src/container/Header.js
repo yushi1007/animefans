@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { navigationItems, genres } from "../../data/data";
-import SearchBox from "../SearchBox";
-import logo from "../../asset/img/animefans_logo.png";
+import { navigationItems, genres } from "../data/data";
+import SearchBox from "../components/SearchBox";
+import logo from "../assets/img/animefans_logo.png";
 
 const Header = () => {
   const [bg, setBg] = useState(false);

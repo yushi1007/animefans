@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../asset/img/animefans_logo.png";
+import logo from "../assets/img/animefans_logo.png";
 
 const Footer = () => {
   return (
