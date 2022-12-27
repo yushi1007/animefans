@@ -5,7 +5,6 @@ const hostUrl = "gogoanime2.p.rapidapi.com";
 
 const options = {
   url: animeUrl,
-  params: {page: "1"},
   headers: {
     "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
     "X-RapidAPI-Host": hostUrl,

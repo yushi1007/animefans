@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { fetchTopAiring, fetchAnimeDetails } from "../../data/fetchAnimeApi";
-import Home from "../Home";
+import { fetchTopAiring, fetchAnimeDetails } from "../data/fetchAnimeApi";
+import Home from "../components/Home";
 
 const HomeSection = () => {
   const [topAiring, setTopAiring] = useState([]);

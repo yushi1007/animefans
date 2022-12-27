@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import AnimePlayerCard from "../AnimePlayerCard";
+import AnimePlayerCard from "../components/AnimePlayerCard";
 import {
   fetchStreamingUrls,
   fetchAnimeDetails,
-} from "../../data/fetchAnimeApi";
-import Loader from "../Loader";
-import EpisodeList from "../EpisodeList";
+} from "../data/fetchAnimeApi";
+import Loader from "../components/Loader";
+import EpisodeList from "../components/EpisodeList";
 
 const AnimeVideo = () => {
   const { id } = useParams();

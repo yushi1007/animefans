@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchAnimeDetails } from "../../data/fetchAnimeApi";
-import AnimeDetailsCard from "../AnimeDetailsCard";
-import EpisodeList from "../EpisodeList";
-import ErrorMessage from "../ErrorMessage";
+import { fetchAnimeDetails } from "../data/fetchAnimeApi";
+import AnimeDetailsCard from "../components/AnimeDetailsCard";
+import EpisodeList from "../components/EpisodeList";
+import ErrorMessage from "../components/ErrorMessage";
 
 const AnimeDetails = () => {
   const { id } = useParams();
