@@ -99,26 +99,22 @@ const Popular = () => {
           {location.pathname === "/popular" && (
             <div className="paginator">
               <ul className="page-numbers">
-                <li>
-                  <button
-                    onClick={handlePrevButton}
-                    disabled={currentPage === pages[0] ? true : false}
-                  >
-                    Prev
-                  </button>
+                <li
+                  onClick={handlePrevButton}
+                  disabled={currentPage === pages[0] ? true : false}
+                >
+                  Prev
                 </li>
                 {pageDecrementButton}
                 {renderPageNumbers}
                 {pageIncrementButton}
-                <li>
-                  <button
-                    onClick={handleNextButton}
-                    disabled={
-                      currentPage === pages[pages.length - 1] ? true : false
-                    }
-                  >
-                    Next
-                  </button>
+                <li
+                  onClick={handleNextButton}
+                  disabled={
+                    currentPage === pages[pages.length - 1] ? true : false
+                  }
+                >
+                  Next
                 </li>
               </ul>
             </div>

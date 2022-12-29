@@ -44,8 +44,8 @@ export const fetchGenre = async (genre) => {
   return data;
 };
 
-export const fetchMovies = async () => {
-  const { data } = await axios.get(`${animeUrl}/anime-movies`, options);
+export const fetchMovies = async (page) => {
+  const { data } = await axios.get(`${animeUrl}/anime-movies?page=${page}`, options);
   return data;
 };
 
