@@ -871,3 +871,46 @@ footer p {
   font-size: 0.9rem;
   color: #b7b7b7;
 }
+
+/* ----------------------------------------------- */
+/* PAGINATOR */
+/* ----------------------------------------------- */
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-numbers {
+  color: white;
+  display: flex;
+}
+
+.page-numbers li {
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.page-numbers li.active {
+  background-color: #ffffff;
+  color: #e62429;
+}
+
+.page-numbers li button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 11pt;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.page-numbers li button:hover {
+  background-color: #ffffff;
+  color: #e62429;
+}
+
+.page-numbers li button:focus {
+  outline: none;
+}

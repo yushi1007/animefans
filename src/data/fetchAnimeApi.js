@@ -21,8 +21,8 @@ export const fetchTopAiring = async () => {
   return data;
 };
 
-export const fetchPopular = async () => {
-  const { data } = await axios.get(`${animeUrl}/popular`, options);
+export const fetchPopular = async (page = 1) => {
+  const { data } = await axios.get(`${animeUrl}/popular?page=${page}`, options);
   return data;
 };
 
