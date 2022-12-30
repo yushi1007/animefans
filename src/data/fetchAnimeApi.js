@@ -21,8 +21,8 @@ export const fetchTopAiring = async () => {
   return data;
 };
 
-export const fetchPopular = async () => {
-  const { data } = await axios.get(`${animeUrl}/popular`, options);
+export const fetchPopular = async (page = 1) => {
+  const { data } = await axios.get(`${animeUrl}/popular?page=${page}`, options);
   return data;
 };
 
@@ -44,8 +44,8 @@ export const fetchGenre = async (genre) => {
   return data;
 };
 
-export const fetchMovies = async () => {
-  const { data } = await axios.get(`${animeUrl}/anime-movies`, options);
+export const fetchMovies = async (page) => {
+  const { data } = await axios.get(`${animeUrl}/anime-movies?page=${page}`, options);
   return data;
 };
 
