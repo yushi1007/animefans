@@ -12,44 +12,76 @@ const options = {
 };
 
 export const fetchRecentRelease = async () => {
-  const { data } = await axios.get(`${animeUrl}/recent-release`, options);
-  return data;
+  try {
+    const { data } = await axios.get(`${animeUrl}/recent-release`, options);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
+//Currently, top airing animes are not available
 export const fetchTopAiring = async () => {
-  const { data } = await axios.get(`${animeUrl}/top-airing`, options);
-  return data;
+    const { data } = await axios.get(`${animeUrl}/top-airing`, options);
+    return data;
 };
 
 export const fetchPopular = async (page = 1) => {
-  const { data } = await axios.get(`${animeUrl}/popular?page=${page}`, options);
-  return data;
+  try {
+    const { data } = await axios.get(
+      `${animeUrl}/popular?page=${page}`,
+      options
+    );
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchAnimeDetails = async (animeId) => {
-  const { data } = await axios.get(
-    `${animeUrl}/anime-details/${animeId}`,
-    options
-  );
-  return data;
+  try {
+    const { data } = await axios.get(
+      `${animeUrl}/anime-details/${animeId}`,
+      options
+    );
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchStreamingUrls = async (url) => {
-  const { data } = await axios.get(`${animeUrl}/${url}`, options);
-  return data;
+  try {
+    const { data } = await axios.get(`${animeUrl}/${url}`, options);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchGenre = async (genre) => {
-  const { data } = await axios.get(`${animeUrl}/genre/${genre}`, options);
-  return data;
+  try {
+    const { data } = await axios.get(`${animeUrl}/genre/${genre}`, options);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchMovies = async (page) => {
-  const { data } = await axios.get(`${animeUrl}/anime-movies?page=${page}`, options);
-  return data;
+  try {
+    const { data } = await axios.get(`${animeUrl}/anime-movies?page=${page}`,options);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchSearchTerm = async (searchTerm) => {
-  const { data } = await axios.get(`${animeUrl}/search${searchTerm}`, options);
-  return data;
+  try {
+    const { data } = await axios.get(`${animeUrl}/search${searchTerm}`,options);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
