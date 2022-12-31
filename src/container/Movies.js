@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchMovies } from "../data/fetchAnimeApi";
 import AnimeLists from "../components/AnimeLists";
-import Loader from "../components/Loader";
 import Paginator from "../components/Paginator";
 
 const Movies = () => {
@@ -24,27 +23,19 @@ const Movies = () => {
   }, [currentPage]);
 
   return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="container">
-          <div
-            className={
-              location.pathname === "/movies"
-                ? "lists-box movies-box"
-                : "lists-box"
-            }
-          >
-            <h1>Movies</h1>
-            <AnimeLists animeLists={movies} />
-          </div>
-        </div>
-      )}
+    <div className="container">
+      <div
+        className={
+          location.pathname === "/movies" ? "lists-box movies-box" : "lists-box"
+        }
+      >
+        <h1>Movies</h1>
+        <AnimeLists animeLists={movies} isLoading={isLoading}/>
+      </div>
       <div className="paginator">
         <Paginator totalPages={totalPages} setCurrentPage={setCurrentPage} />
       </div>
-    </>
+    </div>
   );
 };
 

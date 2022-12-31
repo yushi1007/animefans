@@ -19,18 +19,12 @@ const RecentRelease = () => {
   }, []);
 
   return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="container">
-          <div className="lists-box recent-release-box">
-            <h1>Recent Released</h1>
-            <AnimeLists animeLists={recentRelease} />
-          </div>
-        </div>
-      )}
-    </>
+    <div className="container">
+      <div className="lists-box recent-release-box">
+        <h1>Recent Released</h1>
+        <AnimeLists animeLists={recentRelease} isLoading={isLoading} />
+      </div>
+    </div>
   );
 };
 

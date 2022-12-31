@@ -25,29 +25,23 @@ const Popular = () => {
   }, [currentPage]);
 
   return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="container">
-          <div
-            className={
-              location.pathname === "/popular"
-                ? "lists-box popular-box"
-                : "lists-box"
-            }
-          >
-            <h1>Popular</h1>
-            <AnimeLists animeLists={popular} />
-          </div>
-        </div>
-      )}
+    <div className="container">
+      <div
+        className={
+          location.pathname === "/popular"
+            ? "lists-box popular-box"
+            : "lists-box"
+        }
+      >
+        <h1>Popular</h1>
+        <AnimeLists animeLists={popular} isLoading={isLoading} />
+      </div>
       {location.pathname === "/popular" && (
         <div className="paginator">
           <Paginator totalPages={totalPages} setCurrentPage={setCurrentPage} />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

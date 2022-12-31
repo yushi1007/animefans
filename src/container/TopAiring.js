@@ -19,20 +19,20 @@ const TopAiring = () => {
       }
     });
   }, []);
-
+console.log(topAiring)
   return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="container">
-          <div className={location.pathname === "/topairing" ? "lists-box topairing-box" : "lists-box"}>
-            <h1>Top Airing</h1>
-            <AnimeLists animeLists={topAiring} />
-          </div>
-        </div>
-      )}
-    </>
+    <div className="container">
+      <div
+        className={
+          location.pathname === "/topairing"
+            ? "lists-box topairing-box"
+            : "lists-box"
+        }
+      >
+        <h1>Top Airing</h1>
+        <AnimeLists animeLists={topAiring} isLoading={isLoading} />
+      </div>
+    </div>
   );
 };
 
