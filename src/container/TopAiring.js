@@ -19,7 +19,7 @@ const TopAiring = () => {
       }
     });
   }, []);
-console.log(topAiring)
+
   return (
     <div className="container">
       <div

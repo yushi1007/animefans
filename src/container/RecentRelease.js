@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnimeLists from "../components/AnimeLists";
 import { fetchRecentRelease } from "../data/fetchAnimeApi";
-import Loader from "../components/Loader";
 
 const RecentRelease = () => {
   const [recentRelease, setRecentRelease] = useState([]);

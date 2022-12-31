@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchPopular } from "../data/fetchAnimeApi";
 import AnimeLists from "../components/AnimeLists";
-import Loader from "../components/Loader";
 import Paginator from "../components/Paginator";
 
 const Popular = () => {
   const location = useLocation();
-
   const [popular, setPopular] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

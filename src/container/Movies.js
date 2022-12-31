@@ -30,7 +30,7 @@ const Movies = () => {
         }
       >
         <h1>Movies</h1>
-        <AnimeLists animeLists={movies} isLoading={isLoading}/>
+        <AnimeLists animeLists={movies} isLoading={isLoading} />
       </div>
       <div className="paginator">
         <Paginator totalPages={totalPages} setCurrentPage={setCurrentPage} />
