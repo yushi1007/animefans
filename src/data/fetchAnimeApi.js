@@ -11,9 +11,9 @@ const options = {
   },
 };
 
-export const fetchRecentRelease = async () => {
+export const fetchRecentRelease = async (type = 1, page = 1) => {
   try {
-    const { data } = await axios.get(`${animeUrl}/recent-release`, options);
+    const { data } = await axios.get(`${animeUrl}/recent-release?type=${type}&page=${page}`, options);
     return data;
   } catch (error) {
     console.log(error);
@@ -59,9 +59,9 @@ export const fetchStreamingUrls = async (url) => {
   }
 };
 
-export const fetchGenre = async (genre) => {
+export const fetchGenre = async (genre, page = 1) => {
   try {
-    const { data } = await axios.get(`${animeUrl}/genre/${genre}`, options);
+    const { data } = await axios.get(`${animeUrl}/genre/${genre}?page=${page}`, options);
     return data;
   } catch (error) {
     console.log(error);

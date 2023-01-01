@@ -13,8 +13,8 @@ export const navigationItems = [
     href: "/popular",
   },
   {
-    name: "Top Airing",
-    href: "/topairing",
+    name: "Updated",
+    href: "/recentrelease",
   },
 ];
 

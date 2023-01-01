@@ -7,6 +7,7 @@ import {
   Movies,
   Popular,
   TopAiring,
+  RecentRelease,
   Header,
   Footer,
 } from "./container";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/popular" element={<Popular />} />
           <Route path="/topairing" element={<TopAiring />} />
+          <Route path="/recentrelease" element={<RecentRelease />} />
           <Route path="/genre/:genre" element={<GenreAnime />} />
           <Route path="/search/:searchTerm" element={<SearchAnime />} />
         </Routes>
