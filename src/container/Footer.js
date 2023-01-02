@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="/popular">Popular</a>
             </li>
             <li>
-              <a href="/topairing">Top Airing</a>
+              <a href="/recentrelease">Updated</a>
             </li>
           </ul>
           <div className="footer-text">
