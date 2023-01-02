@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchTopAiring } from "../data/fetchAnimeApi";
 import AnimeLists from "../components/AnimeLists";
-import Loader from "../components/Loader";
 
 const TopAiring = () => {
   const location = useLocation();
