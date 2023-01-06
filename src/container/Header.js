@@ -67,6 +67,9 @@ const Header = () => {
             Anime<span style={{ color: "#e62429" }}>Fans</span>
           </a>
         </div>
+        <div class="sm-search-box">
+          <SearchBox />
+        </div>
         <div
           className={openNavbar ? "hamburger active" : "hamburger"}
           onClick={handleNavbarClick}
@@ -98,7 +101,9 @@ const Header = () => {
             </ul>
           </li>
         </ul>
-        <SearchBox />
+        <div class="lg-search-box">
+          <SearchBox />
+        </div>
       </div>
     </nav>
   );
