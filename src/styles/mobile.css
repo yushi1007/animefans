@@ -1,4 +1,4 @@
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1280px) {
   .navbar {
     background-color: #23252b;
   }
@@ -119,6 +119,10 @@
   .container .card-body {
     width: 700px;
   }
+
+  .lg-search-box {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -153,6 +157,10 @@
   .container .lists-box .card-box .card .card-img {
     height: 310px;
   }
+
+  .sm-search-box .search {
+    width: 200px;
+  }
 }
 
 @media (max-width: 499px) {
@@ -163,6 +171,10 @@
   .container .lists-box .card-box .card .card-img {
     height: 250px;
   }
+
+  .sm-search-box .search {
+    width: 200px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -172,6 +184,10 @@
   
   .container .lists-box .card-box .card .card-img {
     height: 220px;
+  }
+
+  .sm-search-box .search {
+    width: 200px;
   }
 }
 
@@ -197,11 +213,17 @@
   .container {
     max-width: 1280px;
   }
-  
+  .sm-search-box {
+    display: none;
+  }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+  }
+
+  .sm-search-box {
+    display: none;
   }
 }
